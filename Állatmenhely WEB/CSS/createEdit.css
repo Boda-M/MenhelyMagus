@@ -1,0 +1,52 @@
+.animalContainer
+{
+    height: 800px !important;
+}
+
+.kg
+{
+    bottom: 32px !important;
+}
+
+.vaccineDiv img
+{
+    margin-top: 2px !important;
+}
+
+.pushDownLocationImage
+{
+    margin-top: 12px !important;
+}
+
+.pushDownWeightDiv
+{
+    margin-top: 12px !important;
+}
+
+@media (max-width: 900px)
+{
+    .animalContainer
+    {
+        height: 1450px !important;
+    }
+    .animalContainerRight
+    {
+        height: 800px !important;
+    }
+    .animalContainerLeft
+    {
+        height: 650px !important;
+    }
+    .kg
+    {
+        bottom: 69px !important;
+    }
+}
+
+@media (max-width: 850px)
+{
+    .animalContainerRight
+    {
+        height: 700px !important;
+    }
+}

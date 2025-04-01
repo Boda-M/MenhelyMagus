@@ -1,0 +1,53 @@
+﻿<UserControl x:Class="MenhelyMagus_Kezelo.AdminFold.LinkEmployee"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MenhelyMagus_Kezelo"
+             mc:Ignorable="d" 
+                      d:DesignHeight="400" d:DesignWidth="600">
+    <UserControl.Resources>
+        <Style TargetType="TextBox" BasedOn="{StaticResource GlobalTB}">
+            <Setter Property="Grid.ColumnSpan" Value="3"/>
+            <Setter Property="Grid.Column" Value="1"></Setter>
+        </Style>
+        <Style TargetType="Button" BasedOn="{StaticResource GlobalBTN}">
+            <Setter Property="Grid.Column" Value="1"/>
+            <Setter Property="Height" Value="50"/>
+            <Setter Property="Margin" Value="10,0,10,0"/>
+        </Style>
+
+    </UserControl.Resources>
+    <Grid Height="390">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.5*"></ColumnDefinition>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
+            <ColumnDefinition Width="0.5*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <StackPanel x:Name="Adatai"></StackPanel>
+        <Label Foreground="{StaticResource PrimaryBrush}" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="1" Grid.ColumnSpan="3" FontSize="28" FontWeight="Bold">Alkalmazotti menhely ID változtatása</Label>
+        <TextBox Grid.Row="1" Name="Email" IsReadOnly="True"/>
+        <TextBox Grid.Row="2"  Name="Name" IsReadOnly="True"/>
+
+        <TextBox Grid.Row="3" Grid.RowSpan="2" Grid.Column="1" Grid.ColumnSpan="1" Name="ShelterId" Tag="Menhely ID" TextChanged="ShelterPreview"></TextBox>
+        <TextBlock Grid.Row="3" Grid.RowSpan="2" Grid.Column="2" Grid.ColumnSpan="2" Name="ShelterInformation"
+               FontSize="16" VerticalAlignment="Center" Foreground="White" 
+               ></TextBlock>
+        <!-- performance upgrade: only call on lost focus-->
+
+        <Button Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2" Content="Menhely ID változtatása!" Click="Edit_Click" Margin="10,15,10,0" IsDefault="True"/>
+        <Button Grid.Row="5" Grid.Column="3" Grid.ColumnSpan="1" Content="Mégsem" Click="Cancel" Margin="10,15,10,0"/>
+
+    </Grid>
+</UserControl>

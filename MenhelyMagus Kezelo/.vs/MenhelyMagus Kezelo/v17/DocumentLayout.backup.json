@@ -1,0 +1,458 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Gollmer Henrik 12.i\\Mesterremek\\MenhelyMagus Kezelo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\9.0.100-rc.2.24474.11\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.Publish.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A30C693-760B-4842-B327-67FC86A30110}|MenhelyMagus Kezelo\\MenhelyMagus Kezelo.csproj|d:\\gollmer henrik 12.i\\mesterremek\\menhelymagus kezelo\\menhelymagus kezelo\\menhelymagus kezelo.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{6A30C693-760B-4842-B327-67FC86A30110}|MenhelyMagus Kezelo\\MenhelyMagus Kezelo.csproj|solutionrelative:menhelymagus kezelo\\menhelymagus kezelo.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A30C693-760B-4842-B327-67FC86A30110}|MenhelyMagus Kezelo\\MenhelyMagus Kezelo.csproj|d:\\gollmer henrik 12.i\\mesterremek\\menhelymagus kezelo\\menhelymagus kezelo\\accountfold\\login.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A30C693-760B-4842-B327-67FC86A30110}|MenhelyMagus Kezelo\\MenhelyMagus Kezelo.csproj|solutionrelative:menhelymagus kezelo\\accountfold\\login.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A30C693-760B-4842-B327-67FC86A30110}|MenhelyMagus Kezelo\\MenhelyMagus Kezelo.csproj|d:\\gollmer henrik 12.i\\mesterremek\\menhelymagus kezelo\\menhelymagus kezelo\\accountfold\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6A30C693-760B-4842-B327-67FC86A30110}|MenhelyMagus Kezelo\\MenhelyMagus Kezelo.csproj|solutionrelative:menhelymagus kezelo\\accountfold\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A30C693-760B-4842-B327-67FC86A30110}|MenhelyMagus Kezelo\\MenhelyMagus Kezelo.csproj|d:\\gollmer henrik 12.i\\mesterremek\\menhelymagus kezelo\\menhelymagus kezelo\\classes\\token.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A30C693-760B-4842-B327-67FC86A30110}|MenhelyMagus Kezelo\\MenhelyMagus Kezelo.csproj|solutionrelative:menhelymagus kezelo\\classes\\token.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A30C693-760B-4842-B327-67FC86A30110}|MenhelyMagus Kezelo\\MenhelyMagus Kezelo.csproj|d:\\gollmer henrik 12.i\\mesterremek\\menhelymagus kezelo\\menhelymagus kezelo\\employeefold\\adoptanimals.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A30C693-760B-4842-B327-67FC86A30110}|MenhelyMagus Kezelo\\MenhelyMagus Kezelo.csproj|solutionrelative:menhelymagus kezelo\\employeefold\\adoptanimals.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A30C693-760B-4842-B327-67FC86A30110}|MenhelyMagus Kezelo\\MenhelyMagus Kezelo.csproj|d:\\gollmer henrik 12.i\\mesterremek\\menhelymagus kezelo\\menhelymagus kezelo\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A30C693-760B-4842-B327-67FC86A30110}|MenhelyMagus Kezelo\\MenhelyMagus Kezelo.csproj|solutionrelative:menhelymagus kezelo\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A30C693-760B-4842-B327-67FC86A30110}|MenhelyMagus Kezelo\\MenhelyMagus Kezelo.csproj|d:\\gollmer henrik 12.i\\mesterremek\\menhelymagus kezelo\\menhelymagus kezelo\\classes\\adoption.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A30C693-760B-4842-B327-67FC86A30110}|MenhelyMagus Kezelo\\MenhelyMagus Kezelo.csproj|solutionrelative:menhelymagus kezelo\\classes\\adoption.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A30C693-760B-4842-B327-67FC86A30110}|MenhelyMagus Kezelo\\MenhelyMagus Kezelo.csproj|d:\\gollmer henrik 12.i\\mesterremek\\menhelymagus kezelo\\menhelymagus kezelo\\classes\\animal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A30C693-760B-4842-B327-67FC86A30110}|MenhelyMagus Kezelo\\MenhelyMagus Kezelo.csproj|solutionrelative:menhelymagus kezelo\\classes\\animal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A30C693-760B-4842-B327-67FC86A30110}|MenhelyMagus Kezelo\\MenhelyMagus Kezelo.csproj|d:\\gollmer henrik 12.i\\mesterremek\\menhelymagus kezelo\\menhelymagus kezelo\\employeefold\\adoptanimals.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6A30C693-760B-4842-B327-67FC86A30110}|MenhelyMagus Kezelo\\MenhelyMagus Kezelo.csproj|solutionrelative:menhelymagus kezelo\\employeefold\\adoptanimals.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A30C693-760B-4842-B327-67FC86A30110}|MenhelyMagus Kezelo\\MenhelyMagus Kezelo.csproj|d:\\gollmer henrik 12.i\\mesterremek\\menhelymagus kezelo\\menhelymagus kezelo\\adminfold\\editshelter.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A30C693-760B-4842-B327-67FC86A30110}|MenhelyMagus Kezelo\\MenhelyMagus Kezelo.csproj|solutionrelative:menhelymagus kezelo\\adminfold\\editshelter.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A30C693-760B-4842-B327-67FC86A30110}|MenhelyMagus Kezelo\\MenhelyMagus Kezelo.csproj|d:\\gollmer henrik 12.i\\mesterremek\\menhelymagus kezelo\\menhelymagus kezelo\\accountfold\\changecredentials.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A30C693-760B-4842-B327-67FC86A30110}|MenhelyMagus Kezelo\\MenhelyMagus Kezelo.csproj|solutionrelative:menhelymagus kezelo\\accountfold\\changecredentials.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A30C693-760B-4842-B327-67FC86A30110}|MenhelyMagus Kezelo\\MenhelyMagus Kezelo.csproj|d:\\gollmer henrik 12.i\\mesterremek\\menhelymagus kezelo\\menhelymagus kezelo\\adminfold\\editshelter.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6A30C693-760B-4842-B327-67FC86A30110}|MenhelyMagus Kezelo\\MenhelyMagus Kezelo.csproj|solutionrelative:menhelymagus kezelo\\adminfold\\editshelter.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A30C693-760B-4842-B327-67FC86A30110}|MenhelyMagus Kezelo\\MenhelyMagus Kezelo.csproj|d:\\gollmer henrik 12.i\\mesterremek\\menhelymagus kezelo\\menhelymagus kezelo\\accountfold\\register.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A30C693-760B-4842-B327-67FC86A30110}|MenhelyMagus Kezelo\\MenhelyMagus Kezelo.csproj|solutionrelative:menhelymagus kezelo\\accountfold\\register.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A30C693-760B-4842-B327-67FC86A30110}|MenhelyMagus Kezelo\\MenhelyMagus Kezelo.csproj|d:\\gollmer henrik 12.i\\mesterremek\\menhelymagus kezelo\\menhelymagus kezelo\\accountfold\\register.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6A30C693-760B-4842-B327-67FC86A30110}|MenhelyMagus Kezelo\\MenhelyMagus Kezelo.csproj|solutionrelative:menhelymagus kezelo\\accountfold\\register.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A30C693-760B-4842-B327-67FC86A30110}|MenhelyMagus Kezelo\\MenhelyMagus Kezelo.csproj|d:\\gollmer henrik 12.i\\mesterremek\\menhelymagus kezelo\\menhelymagus kezelo\\accountfold\\changecredentials.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6A30C693-760B-4842-B327-67FC86A30110}|MenhelyMagus Kezelo\\MenhelyMagus Kezelo.csproj|solutionrelative:menhelymagus kezelo\\accountfold\\changecredentials.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A30C693-760B-4842-B327-67FC86A30110}|MenhelyMagus Kezelo\\MenhelyMagus Kezelo.csproj|d:\\gollmer henrik 12.i\\mesterremek\\menhelymagus kezelo\\menhelymagus kezelo\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6A30C693-760B-4842-B327-67FC86A30110}|MenhelyMagus Kezelo\\MenhelyMagus Kezelo.csproj|solutionrelative:menhelymagus kezelo\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A30C693-760B-4842-B327-67FC86A30110}|MenhelyMagus Kezelo\\MenhelyMagus Kezelo.csproj|d:\\gollmer henrik 12.i\\mesterremek\\menhelymagus kezelo\\menhelymagus kezelo\\adminfold\\listemployees.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6A30C693-760B-4842-B327-67FC86A30110}|MenhelyMagus Kezelo\\MenhelyMagus Kezelo.csproj|solutionrelative:menhelymagus kezelo\\adminfold\\listemployees.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A30C693-760B-4842-B327-67FC86A30110}|MenhelyMagus Kezelo\\MenhelyMagus Kezelo.csproj|d:\\gollmer henrik 12.i\\mesterremek\\menhelymagus kezelo\\menhelymagus kezelo\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6A30C693-760B-4842-B327-67FC86A30110}|MenhelyMagus Kezelo\\MenhelyMagus Kezelo.csproj|solutionrelative:menhelymagus kezelo\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A30C693-760B-4842-B327-67FC86A30110}|MenhelyMagus Kezelo\\MenhelyMagus Kezelo.csproj|d:\\gollmer henrik 12.i\\mesterremek\\menhelymagus kezelo\\menhelymagus kezelo\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A30C693-760B-4842-B327-67FC86A30110}|MenhelyMagus Kezelo\\MenhelyMagus Kezelo.csproj|solutionrelative:menhelymagus kezelo\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A30C693-760B-4842-B327-67FC86A30110}|MenhelyMagus Kezelo\\MenhelyMagus Kezelo.csproj|d:\\gollmer henrik 12.i\\mesterremek\\menhelymagus kezelo\\menhelymagus kezelo\\employeefold\\listanimals.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6A30C693-760B-4842-B327-67FC86A30110}|MenhelyMagus Kezelo\\MenhelyMagus Kezelo.csproj|solutionrelative:menhelymagus kezelo\\employeefold\\listanimals.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A30C693-760B-4842-B327-67FC86A30110}|MenhelyMagus Kezelo\\MenhelyMagus Kezelo.csproj|d:\\gollmer henrik 12.i\\mesterremek\\menhelymagus kezelo\\menhelymagus kezelo\\adminfold\\listshelters.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6A30C693-760B-4842-B327-67FC86A30110}|MenhelyMagus Kezelo\\MenhelyMagus Kezelo.csproj|solutionrelative:menhelymagus kezelo\\adminfold\\listshelters.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A30C693-760B-4842-B327-67FC86A30110}|MenhelyMagus Kezelo\\MenhelyMagus Kezelo.csproj|d:\\gollmer henrik 12.i\\mesterremek\\menhelymagus kezelo\\menhelymagus kezelo\\employeefold\\editanimal.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6A30C693-760B-4842-B327-67FC86A30110}|MenhelyMagus Kezelo\\MenhelyMagus Kezelo.csproj|solutionrelative:menhelymagus kezelo\\employeefold\\editanimal.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A30C693-760B-4842-B327-67FC86A30110}|MenhelyMagus Kezelo\\MenhelyMagus Kezelo.csproj|d:\\gollmer henrik 12.i\\mesterremek\\menhelymagus kezelo\\menhelymagus kezelo\\employeefold\\editanimal.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A30C693-760B-4842-B327-67FC86A30110}|MenhelyMagus Kezelo\\MenhelyMagus Kezelo.csproj|solutionrelative:menhelymagus kezelo\\employeefold\\editanimal.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A30C693-760B-4842-B327-67FC86A30110}|MenhelyMagus Kezelo\\MenhelyMagus Kezelo.csproj|d:\\gollmer henrik 12.i\\mesterremek\\menhelymagus kezelo\\menhelymagus kezelo\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A30C693-760B-4842-B327-67FC86A30110}|MenhelyMagus Kezelo\\MenhelyMagus Kezelo.csproj|solutionrelative:menhelymagus kezelo\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A30C693-760B-4842-B327-67FC86A30110}|MenhelyMagus Kezelo\\MenhelyMagus Kezelo.csproj|d:\\gollmer henrik 12.i\\mesterremek\\menhelymagus kezelo\\menhelymagus kezelo\\classes\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A30C693-760B-4842-B327-67FC86A30110}|MenhelyMagus Kezelo\\MenhelyMagus Kezelo.csproj|solutionrelative:menhelymagus kezelo\\classes\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A30C693-760B-4842-B327-67FC86A30110}|MenhelyMagus Kezelo\\MenhelyMagus Kezelo.csproj|d:\\gollmer henrik 12.i\\mesterremek\\menhelymagus kezelo\\menhelymagus kezelo\\employeefold\\addanimal.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A30C693-760B-4842-B327-67FC86A30110}|MenhelyMagus Kezelo\\MenhelyMagus Kezelo.csproj|solutionrelative:menhelymagus kezelo\\employeefold\\addanimal.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Gollmer Henrik 12.i\\Mesterremek\\MenhelyMagus Kezelo .NET\\MenhelyMagus Kezelo\\MenhelyMagus Kezelo\\obj\\Debug\\net8.0-windows\\MenhelyMagus Kezelo_oubg1bbr_wpftmp.AssemblyInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Microsoft.NET.Publish.targets",
+              "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\9.0.100-rc.2.24474.11\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.Publish.targets",
+              "ToolTip": "C:\\Program Files\\dotnet\\sdk\\9.0.100-rc.2.24474.11\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.Publish.targets",
+              "ViewState": "AgIAAEYEAAAAAAAAAAAgwFoEAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-03-18T12:20:53.847Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MenhelyMagus Kezelo.csproj",
+              "DocumentMoniker": "D:\\Gollmer Henrik 12.i\\Mesterremek\\MenhelyMagus Kezelo\\MenhelyMagus Kezelo\\MenhelyMagus Kezelo.csproj",
+              "RelativeDocumentMoniker": "MenhelyMagus Kezelo\\MenhelyMagus Kezelo.csproj",
+              "ToolTip": "D:\\Gollmer Henrik 12.i\\Mesterremek\\MenhelyMagus Kezelo\\MenhelyMagus Kezelo\\MenhelyMagus Kezelo.csproj",
+              "RelativeToolTip": "MenhelyMagus Kezelo\\MenhelyMagus Kezelo.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-18T12:20:24.326Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Login.xaml",
+              "DocumentMoniker": "D:\\Gollmer Henrik 12.i\\Mesterremek\\MenhelyMagus Kezelo\\MenhelyMagus Kezelo\\AccountFold\\Login.xaml",
+              "RelativeDocumentMoniker": "MenhelyMagus Kezelo\\AccountFold\\Login.xaml",
+              "ToolTip": "D:\\Gollmer Henrik 12.i\\Mesterremek\\MenhelyMagus Kezelo\\MenhelyMagus Kezelo\\AccountFold\\Login.xaml",
+              "RelativeToolTip": "MenhelyMagus Kezelo\\AccountFold\\Login.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-18T12:16:23.867Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Token.cs",
+              "DocumentMoniker": "D:\\Gollmer Henrik 12.i\\Mesterremek\\MenhelyMagus Kezelo\\MenhelyMagus Kezelo\\Classes\\Token.cs",
+              "RelativeDocumentMoniker": "MenhelyMagus Kezelo\\Classes\\Token.cs",
+              "ToolTip": "D:\\Gollmer Henrik 12.i\\Mesterremek\\MenhelyMagus Kezelo\\MenhelyMagus Kezelo\\Classes\\Token.cs",
+              "RelativeToolTip": "MenhelyMagus Kezelo\\Classes\\Token.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T09:18:35.474Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AdoptAnimals.xaml",
+              "DocumentMoniker": "D:\\Gollmer Henrik 12.i\\Mesterremek\\MenhelyMagus Kezelo\\MenhelyMagus Kezelo\\EmployeeFold\\AdoptAnimals.xaml",
+              "RelativeDocumentMoniker": "MenhelyMagus Kezelo\\EmployeeFold\\AdoptAnimals.xaml",
+              "ToolTip": "D:\\Gollmer Henrik 12.i\\Mesterremek\\MenhelyMagus Kezelo\\MenhelyMagus Kezelo\\EmployeeFold\\AdoptAnimals.xaml",
+              "RelativeToolTip": "MenhelyMagus Kezelo\\EmployeeFold\\AdoptAnimals.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-18T09:17:29.94Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "EditShelter.xaml.cs",
+              "DocumentMoniker": "D:\\Gollmer Henrik 12.i\\Mesterremek\\MenhelyMagus Kezelo\\MenhelyMagus Kezelo\\AdminFold\\EditShelter.xaml.cs",
+              "RelativeDocumentMoniker": "MenhelyMagus Kezelo\\AdminFold\\EditShelter.xaml.cs",
+              "ToolTip": "D:\\Gollmer Henrik 12.i\\Mesterremek\\MenhelyMagus Kezelo\\MenhelyMagus Kezelo\\AdminFold\\EditShelter.xaml.cs",
+              "RelativeToolTip": "MenhelyMagus Kezelo\\AdminFold\\EditShelter.xaml.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAwwGUAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T12:48:44.765Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ListShelters.xaml",
+              "DocumentMoniker": "D:\\Gollmer Henrik 12.i\\Mesterremek\\MenhelyMagus Kezelo\\MenhelyMagus Kezelo\\AdminFold\\ListShelters.xaml",
+              "RelativeDocumentMoniker": "MenhelyMagus Kezelo\\AdminFold\\ListShelters.xaml",
+              "ToolTip": "D:\\Gollmer Henrik 12.i\\Mesterremek\\MenhelyMagus Kezelo\\MenhelyMagus Kezelo\\AdminFold\\ListShelters.xaml",
+              "RelativeToolTip": "MenhelyMagus Kezelo\\AdminFold\\ListShelters.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-17T12:23:40.579Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ListEmployees.xaml",
+              "DocumentMoniker": "D:\\Gollmer Henrik 12.i\\Mesterremek\\MenhelyMagus Kezelo\\MenhelyMagus Kezelo\\AdminFold\\ListEmployees.xaml",
+              "RelativeDocumentMoniker": "MenhelyMagus Kezelo\\AdminFold\\ListEmployees.xaml",
+              "ToolTip": "D:\\Gollmer Henrik 12.i\\Mesterremek\\MenhelyMagus Kezelo\\MenhelyMagus Kezelo\\AdminFold\\ListEmployees.xaml",
+              "RelativeToolTip": "MenhelyMagus Kezelo\\AdminFold\\ListEmployees.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-17T11:31:03.61Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Adoption.cs",
+              "DocumentMoniker": "D:\\Gollmer Henrik 12.i\\Mesterremek\\MenhelyMagus Kezelo\\MenhelyMagus Kezelo\\Classes\\Adoption.cs",
+              "RelativeDocumentMoniker": "MenhelyMagus Kezelo\\Classes\\Adoption.cs",
+              "ToolTip": "D:\\Gollmer Henrik 12.i\\Mesterremek\\MenhelyMagus Kezelo\\MenhelyMagus Kezelo\\Classes\\Adoption.cs",
+              "RelativeToolTip": "MenhelyMagus Kezelo\\Classes\\Adoption.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAhwDkAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T11:46:56.359Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "EditShelter.xaml",
+              "DocumentMoniker": "D:\\Gollmer Henrik 12.i\\Mesterremek\\MenhelyMagus Kezelo\\MenhelyMagus Kezelo\\AdminFold\\EditShelter.xaml",
+              "RelativeDocumentMoniker": "MenhelyMagus Kezelo\\AdminFold\\EditShelter.xaml",
+              "ToolTip": "D:\\Gollmer Henrik 12.i\\Mesterremek\\MenhelyMagus Kezelo\\MenhelyMagus Kezelo\\AdminFold\\EditShelter.xaml",
+              "RelativeToolTip": "MenhelyMagus Kezelo\\AdminFold\\EditShelter.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-17T12:48:43.634Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "D:\\Gollmer Henrik 12.i\\Mesterremek\\MenhelyMagus Kezelo\\MenhelyMagus Kezelo\\App.xaml.cs",
+              "RelativeDocumentMoniker": "MenhelyMagus Kezelo\\App.xaml.cs",
+              "ToolTip": "D:\\Gollmer Henrik 12.i\\Mesterremek\\MenhelyMagus Kezelo\\MenhelyMagus Kezelo\\App.xaml.cs",
+              "RelativeToolTip": "MenhelyMagus Kezelo\\App.xaml.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAAA4wGAAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T11:39:09.415Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Login.xaml.cs",
+              "DocumentMoniker": "D:\\Gollmer Henrik 12.i\\Mesterremek\\MenhelyMagus Kezelo\\MenhelyMagus Kezelo\\AccountFold\\Login.xaml.cs",
+              "RelativeDocumentMoniker": "MenhelyMagus Kezelo\\AccountFold\\Login.xaml.cs",
+              "ToolTip": "D:\\Gollmer Henrik 12.i\\Mesterremek\\MenhelyMagus Kezelo\\MenhelyMagus Kezelo\\AccountFold\\Login.xaml.cs",
+              "RelativeToolTip": "MenhelyMagus Kezelo\\AccountFold\\Login.xaml.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAADgvzIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T11:48:59.726Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AdoptAnimals.xaml.cs",
+              "DocumentMoniker": "D:\\Gollmer Henrik 12.i\\Mesterremek\\MenhelyMagus Kezelo\\MenhelyMagus Kezelo\\EmployeeFold\\AdoptAnimals.xaml.cs",
+              "RelativeDocumentMoniker": "MenhelyMagus Kezelo\\EmployeeFold\\AdoptAnimals.xaml.cs",
+              "ToolTip": "D:\\Gollmer Henrik 12.i\\Mesterremek\\MenhelyMagus Kezelo\\MenhelyMagus Kezelo\\EmployeeFold\\AdoptAnimals.xaml.cs",
+              "RelativeToolTip": "MenhelyMagus Kezelo\\EmployeeFold\\AdoptAnimals.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T09:16:30.406Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ApiService.cs",
+              "DocumentMoniker": "D:\\Gollmer Henrik 12.i\\Mesterremek\\MenhelyMagus Kezelo\\MenhelyMagus Kezelo\\ApiService.cs",
+              "RelativeDocumentMoniker": "MenhelyMagus Kezelo\\ApiService.cs",
+              "ToolTip": "D:\\Gollmer Henrik 12.i\\Mesterremek\\MenhelyMagus Kezelo\\MenhelyMagus Kezelo\\ApiService.cs",
+              "RelativeToolTip": "MenhelyMagus Kezelo\\ApiService.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAlwFMAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T11:40:05.125Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Register.xaml",
+              "DocumentMoniker": "D:\\Gollmer Henrik 12.i\\Mesterremek\\MenhelyMagus Kezelo\\MenhelyMagus Kezelo\\AccountFold\\Register.xaml",
+              "RelativeDocumentMoniker": "MenhelyMagus Kezelo\\AccountFold\\Register.xaml",
+              "ToolTip": "D:\\Gollmer Henrik 12.i\\Mesterremek\\MenhelyMagus Kezelo\\MenhelyMagus Kezelo\\AccountFold\\Register.xaml",
+              "RelativeToolTip": "MenhelyMagus Kezelo\\AccountFold\\Register.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-17T12:48:27.757Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Animal.cs",
+              "DocumentMoniker": "D:\\Gollmer Henrik 12.i\\Mesterremek\\MenhelyMagus Kezelo\\MenhelyMagus Kezelo\\Classes\\Animal.cs",
+              "RelativeDocumentMoniker": "MenhelyMagus Kezelo\\Classes\\Animal.cs",
+              "ToolTip": "D:\\Gollmer Henrik 12.i\\Mesterremek\\MenhelyMagus Kezelo\\MenhelyMagus Kezelo\\Classes\\Animal.cs",
+              "RelativeToolTip": "MenhelyMagus Kezelo\\Classes\\Animal.cs",
+              "ViewState": "AgIAAKQAAAAAAAAAAAAvwPwAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T11:47:01.474Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Register.xaml.cs",
+              "DocumentMoniker": "D:\\Gollmer Henrik 12.i\\Mesterremek\\MenhelyMagus Kezelo\\MenhelyMagus Kezelo\\AccountFold\\Register.xaml.cs",
+              "RelativeDocumentMoniker": "MenhelyMagus Kezelo\\AccountFold\\Register.xaml.cs",
+              "ToolTip": "D:\\Gollmer Henrik 12.i\\Mesterremek\\MenhelyMagus Kezelo\\MenhelyMagus Kezelo\\AccountFold\\Register.xaml.cs",
+              "RelativeToolTip": "MenhelyMagus Kezelo\\AccountFold\\Register.xaml.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T12:48:30.172Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ListAnimals.xaml",
+              "DocumentMoniker": "D:\\Gollmer Henrik 12.i\\Mesterremek\\MenhelyMagus Kezelo\\MenhelyMagus Kezelo\\EmployeeFold\\ListAnimals.xaml",
+              "RelativeDocumentMoniker": "MenhelyMagus Kezelo\\EmployeeFold\\ListAnimals.xaml",
+              "ToolTip": "D:\\Gollmer Henrik 12.i\\Mesterremek\\MenhelyMagus Kezelo\\MenhelyMagus Kezelo\\EmployeeFold\\ListAnimals.xaml",
+              "RelativeToolTip": "MenhelyMagus Kezelo\\EmployeeFold\\ListAnimals.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-17T11:37:43.594Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "App.xaml",
+              "DocumentMoniker": "D:\\Gollmer Henrik 12.i\\Mesterremek\\MenhelyMagus Kezelo\\MenhelyMagus Kezelo\\App.xaml",
+              "RelativeDocumentMoniker": "MenhelyMagus Kezelo\\App.xaml",
+              "ToolTip": "D:\\Gollmer Henrik 12.i\\Mesterremek\\MenhelyMagus Kezelo\\MenhelyMagus Kezelo\\App.xaml",
+              "RelativeToolTip": "MenhelyMagus Kezelo\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-14T11:39:52.719Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\Gollmer Henrik 12.i\\Mesterremek\\MenhelyMagus Kezelo\\MenhelyMagus Kezelo\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MenhelyMagus Kezelo\\MainWindow.xaml",
+              "ToolTip": "D:\\Gollmer Henrik 12.i\\Mesterremek\\MenhelyMagus Kezelo\\MenhelyMagus Kezelo\\MainWindow.xaml",
+              "RelativeToolTip": "MenhelyMagus Kezelo\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-14T11:29:17.96Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ChangeCredentials.xaml.cs",
+              "DocumentMoniker": "D:\\Gollmer Henrik 12.i\\Mesterremek\\MenhelyMagus Kezelo\\MenhelyMagus Kezelo\\AccountFold\\ChangeCredentials.xaml.cs",
+              "RelativeDocumentMoniker": "MenhelyMagus Kezelo\\AccountFold\\ChangeCredentials.xaml.cs",
+              "ToolTip": "D:\\Gollmer Henrik 12.i\\Mesterremek\\MenhelyMagus Kezelo\\MenhelyMagus Kezelo\\AccountFold\\ChangeCredentials.xaml.cs",
+              "RelativeToolTip": "MenhelyMagus Kezelo\\AccountFold\\ChangeCredentials.xaml.cs",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAIwHgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T11:48:58.667Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ChangeCredentials.xaml",
+              "DocumentMoniker": "D:\\Gollmer Henrik 12.i\\Mesterremek\\MenhelyMagus Kezelo\\MenhelyMagus Kezelo\\AccountFold\\ChangeCredentials.xaml",
+              "RelativeDocumentMoniker": "MenhelyMagus Kezelo\\AccountFold\\ChangeCredentials.xaml",
+              "ToolTip": "D:\\Gollmer Henrik 12.i\\Mesterremek\\MenhelyMagus Kezelo\\MenhelyMagus Kezelo\\AccountFold\\ChangeCredentials.xaml",
+              "RelativeToolTip": "MenhelyMagus Kezelo\\AccountFold\\ChangeCredentials.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-14T12:18:21.696Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "EditAnimal.xaml",
+              "DocumentMoniker": "D:\\Gollmer Henrik 12.i\\Mesterremek\\MenhelyMagus Kezelo\\MenhelyMagus Kezelo\\EmployeeFold\\EditAnimal.xaml",
+              "RelativeDocumentMoniker": "MenhelyMagus Kezelo\\EmployeeFold\\EditAnimal.xaml",
+              "ToolTip": "D:\\Gollmer Henrik 12.i\\Mesterremek\\MenhelyMagus Kezelo\\MenhelyMagus Kezelo\\EmployeeFold\\EditAnimal.xaml",
+              "RelativeToolTip": "MenhelyMagus Kezelo\\EmployeeFold\\EditAnimal.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-14T12:09:24.158Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "EditAnimal.xaml.cs",
+              "DocumentMoniker": "D:\\Gollmer Henrik 12.i\\Mesterremek\\MenhelyMagus Kezelo\\MenhelyMagus Kezelo\\EmployeeFold\\EditAnimal.xaml.cs",
+              "RelativeDocumentMoniker": "MenhelyMagus Kezelo\\EmployeeFold\\EditAnimal.xaml.cs",
+              "ToolTip": "D:\\Gollmer Henrik 12.i\\Mesterremek\\MenhelyMagus Kezelo\\MenhelyMagus Kezelo\\EmployeeFold\\EditAnimal.xaml.cs",
+              "RelativeToolTip": "MenhelyMagus Kezelo\\EmployeeFold\\EditAnimal.xaml.cs",
+              "ViewState": "AgIAAMQAAAAAAAAAAAASwNgAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T11:47:05.318Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Admin.cs",
+              "DocumentMoniker": "D:\\Gollmer Henrik 12.i\\Mesterremek\\MenhelyMagus Kezelo\\MenhelyMagus Kezelo\\Classes\\Admin.cs",
+              "RelativeDocumentMoniker": "MenhelyMagus Kezelo\\Classes\\Admin.cs",
+              "ToolTip": "D:\\Gollmer Henrik 12.i\\Mesterremek\\MenhelyMagus Kezelo\\MenhelyMagus Kezelo\\Classes\\Admin.cs",
+              "RelativeToolTip": "MenhelyMagus Kezelo\\Classes\\Admin.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T11:35:34.102Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "AddAnimal.xaml.cs",
+              "DocumentMoniker": "D:\\Gollmer Henrik 12.i\\Mesterremek\\MenhelyMagus Kezelo\\MenhelyMagus Kezelo\\EmployeeFold\\AddAnimal.xaml.cs",
+              "RelativeDocumentMoniker": "MenhelyMagus Kezelo\\EmployeeFold\\AddAnimal.xaml.cs",
+              "ToolTip": "D:\\Gollmer Henrik 12.i\\Mesterremek\\MenhelyMagus Kezelo\\MenhelyMagus Kezelo\\EmployeeFold\\AddAnimal.xaml.cs",
+              "RelativeToolTip": "MenhelyMagus Kezelo\\EmployeeFold\\AddAnimal.xaml.cs",
+              "ViewState": "AgIAAKwAAAAAAAAAAAASwMAAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T11:46:42.761Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\Gollmer Henrik 12.i\\Mesterremek\\MenhelyMagus Kezelo\\MenhelyMagus Kezelo\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MenhelyMagus Kezelo\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\Gollmer Henrik 12.i\\Mesterremek\\MenhelyMagus Kezelo\\MenhelyMagus Kezelo\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MenhelyMagus Kezelo\\MainWindow.xaml.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAWwCcAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T11:29:16.39Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "MenhelyMagus Kezelo_oubg1bbr_wpftmp.AssemblyInfo.cs",
+              "DocumentMoniker": "D:\\Gollmer Henrik 12.i\\Mesterremek\\MenhelyMagus Kezelo .NET\\MenhelyMagus Kezelo\\MenhelyMagus Kezelo\\obj\\Debug\\net8.0-windows\\MenhelyMagus Kezelo_oubg1bbr_wpftmp.AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "..\\MenhelyMagus Kezelo .NET\\MenhelyMagus Kezelo\\MenhelyMagus Kezelo\\obj\\Debug\\net8.0-windows\\MenhelyMagus Kezelo_oubg1bbr_wpftmp.AssemblyInfo.cs",
+              "ToolTip": "D:\\Gollmer Henrik 12.i\\Mesterremek\\MenhelyMagus Kezelo .NET\\MenhelyMagus Kezelo\\MenhelyMagus Kezelo\\obj\\Debug\\net8.0-windows\\MenhelyMagus Kezelo_oubg1bbr_wpftmp.AssemblyInfo.cs",
+              "RelativeToolTip": "..\\MenhelyMagus Kezelo .NET\\MenhelyMagus Kezelo\\MenhelyMagus Kezelo\\obj\\Debug\\net8.0-windows\\MenhelyMagus Kezelo_oubg1bbr_wpftmp.AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T11:37:00.91Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

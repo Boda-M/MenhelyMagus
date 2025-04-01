@@ -1,0 +1,49 @@
+﻿<UserControl x:Class="MenhelyMagus_Kezelo.AdminFold.AddAdmin"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MenhelyMagus_Kezelo"
+             mc:Ignorable="d" 
+             d:DesignHeight="400" d:DesignWidth="600">
+    <UserControl.Resources>
+        <Style TargetType="TextBox" BasedOn="{StaticResource GlobalTB}">
+            <Setter Property="Grid.Column" Value="1"></Setter>
+        </Style>
+        <Style TargetType="PasswordBox" BasedOn="{StaticResource GlobalPB}">
+            <Setter Property="Grid.Column" Value="1"></Setter>
+        </Style>
+        <Style TargetType="Button" BasedOn="{StaticResource GlobalBTN}">
+            <Setter Property="Grid.Column" Value="1"/>
+            <Setter Property="Height" Value="50"/>
+            <Setter Property="Width" Value="250" />
+            <Setter Property="IsDefault" Value="True" />
+        </Style>
+
+    </UserControl.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
+            <ColumnDefinition Width="5*"></ColumnDefinition>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Label Foreground="{StaticResource PrimaryBrush}" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="1" FontSize="30" FontWeight="Bold">Admin hozzáadása</Label>
+        <TextBox Grid.Row="1" Name="Email"/>
+        <PasswordBox Name="Password" Grid.Row="2" Tag="Jelszó" />
+        <TextBox Grid.Row="3"  Name="Name" Tag="Név"/>
+
+        <Button Grid.Row="4" Content="Admin hozzáadása!" Click="Add_Click" Width="200" Grid.Column="1" Margin="67,16,67,0"/>
+        
+
+            
+
+    </Grid>
+</UserControl>

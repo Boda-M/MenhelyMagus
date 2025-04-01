@@ -1,0 +1,100 @@
+﻿<UserControl x:Class="MenhelyMagus_Kezelo.EmployeeFold.ListAnimals"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MenhelyMagus_Kezelo.EmployeeFold"
+             xmlns:controls="clr-namespace:MenhelyMagus_Kezelo.Controls"
+             xmlns:converters="clr-namespace:MenhelyMagus_Kezelo.Converters"
+             mc:Ignorable="d" 
+             d:DesignHeight="400" d:DesignWidth="600">
+        <UserControl.Resources>
+            <Style TargetType="TextBox" BasedOn="{StaticResource GlobalTB}">
+                <Setter Property="Height" Value="30"/>
+                <Setter Property="FontSize" Value="20"/>
+                <Setter Property="Padding" Value="5,0,0,0"/>
+            </Style>
+            <Style TargetType="Button" BasedOn="{StaticResource GlobalBTN}">
+                <Setter Property="FontSize" Value="13"/>
+                <Setter Property="Height" Value="35"/>
+                <Setter Property="Margin" Value="5,0,5,0"/>
+                <Setter Property="Padding" Value="5,0,5,0"/>
+            </Style>
+            <converters:ImagePathConverter x:Key="ImagePathConverter"/>
+
+        </UserControl.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal">
+            <controls:MultiSelectComboBox x:Name="Species_Filter" Tag="Fajok" Width="250" CustomSelectionChanged="Species_SelectionChanged" ControlTag="Faj" TextBoxPadding="0" Height="30"/>
+            <TextBox Width="200" Margin="10" Name="SearchBar" Tag="Keresés név alapján..." TextChanged="Search_Click" FontSize="16" Padding="8,3,0,0"></TextBox>
+            <Button Click="Reset_Click" Width="100" FontSize="15" Content="Visszaállítás" />
+        </StackPanel>
+        <DataGrid ColumnHeaderStyle="{DynamicResource DataGridColumnHeaderStyleCentered}" CellStyle="{DynamicResource DataGridCellStyleCentered}" Name="Animals"  ItemsSource="{Binding animals}" AutoGenerateColumns="False" Grid.Row="1" Background="#FF23262B" Height="340" VerticalAlignment="Bottom" CanUserResizeColumns="False" CanUserResizeRows="False" >
+            <DataGrid.Resources>
+            </DataGrid.Resources>
+            <DataGrid.Columns>
+                <DataGridTextColumn Width="1.5*" Binding="{Binding Id}" Header="ID"></DataGridTextColumn>
+                <DataGridTextColumn Width="4*" Binding="{Binding Name}" Header="Név"></DataGridTextColumn>
+                <DataGridTextColumn Width="4*" Binding="{Binding SpeciesString}" Header="Faj"></DataGridTextColumn>
+                <DataGridTextColumn Width="6*" Binding="{Binding BirthDate,StringFormat=\{0:yyyy-MM-dd\}}" Header="Születési Dátum"></DataGridTextColumn>
+                <DataGridTextColumn Width="6*" Binding="{Binding EntryDate,StringFormat=\{0:yyyy-MM-dd\}}" Header="Bekerülési Dátum"></DataGridTextColumn>
+
+            </DataGrid.Columns>
+            <DataGrid.RowDetailsTemplate>
+                <!--DETAILS__________________________________________ -->
+                <DataTemplate>
+                    <Grid Margin="10,5,0,10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                            <TextBlock Text="{Binding Name}" FontSize="24" FontWeight="DemiBold"/>
+                            <TextBlock Text="{Binding Age, StringFormat=' {0}'}" FontSize="24" FontWeight="DemiBold"/>
+                            <Image Name="Nem" Source="{Binding Gender, Converter={StaticResource ImagePathConverter}}" Width="20px" Margin="10,0,0,0"/>
+                        </StackPanel>
+                        <StackPanel Grid.Row="1" Grid.Column="0">
+                            <Image Name="Kép" Source="{Binding Image}" Width="100px" Height="100px" HorizontalAlignment="Left" Margin="10,10,10,10" Stretch="UniformToFill"/>
+                        </StackPanel>
+                        <StackPanel Grid.Row="1" Grid.Column="1" Margin="3,15,0,0">
+                            <TextBlock Text="{Binding Path=SpeciesString, StringFormat='Faj: {0}'}" Margin="0,5"/>
+                            <TextBlock Text="{Binding Path=BreedNamesAsString, StringFormat='Fajtá(k): {0}'}" Margin="0,5"/>
+                            <TextBlock Text="{Binding Path=Weight, StringFormat='Tömeg: {0}kg'}" Margin="0,5"/>
+                        </StackPanel>
+                        <StackPanel Grid.Row="1" Grid.Column="2" Margin="40,15,0,0">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Margin="0,5">Ivartalanított:</TextBlock>
+                                <CheckBox IsChecked="{Binding Neutered}" IsEnabled="False" Margin="10,8,0,0"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Margin="0,5">Egészséges:</TextBlock>
+                                <CheckBox IsChecked="{Binding Healthy}" IsEnabled="False" Margin="20,8,0,0"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Margin="0,5">Szobatiszta:</TextBlock>
+                                <CheckBox IsChecked="{Binding Housebroken}" IsEnabled="False" Margin="20,8,0,0"/>
+                            </StackPanel>
+                        </StackPanel>
+                        <StackPanel Grid.Row="2" Grid.Column="0" Orientation="Horizontal" Grid.ColumnSpan="4">
+                            <Button Width="140" Click="Edit_Click" Margin="110,0,0,0" FontSize="15">Állat módosítása</Button>
+                            <Button Width="120" Click="Delete_Click" Margin="110,0,0,0" FontSize="15">Állat törlése</Button>
+                        </StackPanel>
+
+                    </Grid>
+                </DataTemplate>
+            </DataGrid.RowDetailsTemplate>
+        </DataGrid>
+    </Grid>
+</UserControl>

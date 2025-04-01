@@ -1,0 +1,283 @@
+.selectedGender 
+{
+    outline: 2px solid rgb(124,195,247);
+    outline-offset: 3px;
+}
+
+.genderMale
+{
+    outline-color: rgb(124,195,247) !important;
+}
+
+.genderFemale
+{
+    outline-color: rgb(242,118,158) !important;
+}
+
+.genderUnknown
+{
+    outline-color: black !important;
+}
+
+.animalGenderImage
+{
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 24px;
+    margin-bottom: -4px;
+}
+
+.inputAnimalName
+{
+    font-weight: 600;
+    font-size: 24px;
+    width: 185px;
+    margin-left: 27px;
+}
+
+.animalLocation
+{
+    line-height: 24px;
+    height: 24px;
+    margin-top: 5px;
+}
+
+.animalLocation img
+{
+    margin-top: 2px;
+}
+
+.inputBirthday
+{
+    width: 130px;
+    font-size: 15px;
+}
+
+.inputWeight
+{
+    width: 130px;
+    font-size: 15px;
+}
+
+.kg
+{
+    position: absolute;
+    bottom: -10px;
+    right: 35px;
+    visibility: hidden;
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button 
+{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] 
+{
+    appearance:textfield;
+}
+
+.inputDescription
+{
+    font-size: 18px !important;
+    font-weight: 400 !important;
+    text-align: justify;
+    margin-top: 20px;
+    width: 100%;
+    white-space: pre-wrap;
+    height: 180px;
+    font-size: 16px !important;
+    resize: none;
+}
+
+.modifyButton
+{
+    float: left;
+    width: 100%;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    margin-top: -100px;
+}
+
+.modifyButton button
+{
+    width: 250px;
+    height: 42px;
+    font-weight: 500;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 16px;
+    position: relative;
+    z-index: 1;
+}
+
+.animalImgContainer 
+{
+    position: relative; 
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-left: 25px;
+}
+
+.editHoverDiv 
+{
+    width: 328px;
+    height: 100%; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    background-color: rgba(49, 49, 49, 0.829); 
+    border-radius: 20px; 
+
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+
+    opacity: 0; 
+    transition: opacity 0.75s ease; 
+    pointer-events: none; 
+}
+
+.animalContainerIMG 
+{
+    display: block; 
+    max-width: 600px;
+    height: 320px !important;
+    height: auto; 
+}
+
+.animalImgContainer:hover .editHoverDiv 
+{
+    opacity: 1; 
+    pointer-events: auto; 
+    cursor: pointer; 
+}
+
+.editHoverDiv img 
+{
+    width: 40%; 
+    margin-bottom: 10px; 
+}
+
+.editHoverDiv p 
+{
+    font-size: 150%; 
+    margin: 0; 
+    color: var(--highlight); 
+    font-weight: 600; 
+}
+
+.animalContainerLeft
+{
+    height: 600px !important;
+}
+
+.animalContainer
+{
+    height: 700px !important;
+}
+
+@media (max-width: 900px)
+{
+    .editHoverDiv
+    {
+        left:0;
+        right:0;
+      
+        margin-left: auto;
+        margin-right: auto;
+      
+        position: absolute;
+    }
+}
+
+@media (max-width: 900px)
+{
+    .inputAnimalName
+    {
+        margin-left: 15px;
+    }
+}
+
+@media (max-width: 850px)
+{
+    .editHoverDiv
+    {
+        left:0;
+        right:0;
+      
+        margin-left: auto;
+        margin-right: auto;
+      
+        position: absolute;
+    }
+    .modifyButton
+    {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 480px)
+{
+    .editHoverDiv
+    {
+        width: 300px;
+    }
+    .inputAnimalName
+    {
+        width: 170px;
+        margin-left: 40px;
+    }
+    .animalGenderImage
+    {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 560px)
+{
+    .modifyButton
+    {
+        display: block;
+        margin-top: -30px;
+    }
+    .modifyButton button
+    {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 900px)
+{
+    .animalImgContainer
+    {
+        margin-left: auto;
+        margin-right: auto;
+        width: 325px;
+        display: block;
+    }
+}
+
+@media (max-width: 850px)
+{
+    .animalContainer
+    {
+        height: 1200px !important;
+    }
+}
+
+@media (max-width: 850px)
+{
+    .animalName
+    {
+        margin-left: 6px !important;
+    }
+}

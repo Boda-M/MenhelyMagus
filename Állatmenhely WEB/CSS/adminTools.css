@@ -1,0 +1,169 @@
+html, body
+{
+    height: 100%;
+}
+  
+.toolCardWrapper 
+{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.toolCard 
+{
+    margin-top: 50px;
+    margin-bottom: 145px;
+    width: 280px;
+    height: 420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    transition: all 1s;
+    border: 3px solid var(--highlightdarker);
+    cursor: pointer;
+    margin-left: 50px;
+    margin-right: 50px;
+    box-shadow: 0 0 0px var(--highlight);
+}
+
+.toolCard
+{
+    color: white;
+    font-size: 42px;
+    text-align: center;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.toolCard h2
+{
+    color: white;
+    font-size: 42px;
+    text-align: center;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.toolCard1
+{
+    background: #111 url("../IMG/addEmployee.png") center/cover no-repeat;
+}
+
+.toolCard2
+{
+    background: #111 url("../IMG/addUser.png") center/cover no-repeat;
+}
+
+.toolCard3
+{
+    background: #111 url("../IMG/addShelter.png") center/cover no-repeat;
+}
+
+.toolCard::before 
+{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+      0deg, 
+      transparent, 
+      transparent 30%, 
+      rgba(0, 255, 255, 0.3)
+    );
+    transform: rotate(-45deg);
+    transition: all 1s ease;
+    opacity: 0;
+    z-index: 1;
+}
+
+.toolCard:hover::before 
+{
+    opacity: 1;
+    transform: rotate(-45deg) translateY(100%);
+}
+
+@keyframes pulse 
+{
+    0% 
+    {
+      box-shadow: 0 0 10px var(--highlight);
+    }
+    50% 
+    {
+      box-shadow: 0 0 10px var(--highlightdarker), 0 0 30px var(--highlightdarker);
+    }
+    100% 
+    {
+      box-shadow: 0 0 10px var(--highlight);
+    }
+}
+
+@keyframes reversePulse 
+{
+    0% 
+    {
+      box-shadow: 0 0 20px var(--highlight);
+    }
+    100% 
+    {
+      box-shadow: 0 0 0px var(--highlight);
+    }
+}
+
+
+@keyframes scaleRotate 
+{
+    0% 
+    {
+        transform: scale(1) rotate(0deg);
+    }
+    25% 
+    {
+        transform: scale(1.045) rotate(0.5deg);
+    }
+    50% 
+    {
+        transform: scale(1.045) rotate(-0.5deg);
+    }
+    75% 
+    {
+        transform: scale(1.045) rotate(0.5deg);
+    }
+    100% 
+    {
+        transform: scale(1.04) rotate(0deg);
+    }
+}
+
+@keyframes reverseScaleRotate 
+{
+    0% 
+    {
+        transform: scale(1.04);
+    }
+    100% 
+    {
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 1200px)
+{
+    .toolCardWrapper
+    {
+        display: unset;
+    }
+    .toolCard
+    {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+    }
+}

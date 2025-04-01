@@ -1,0 +1,288 @@
+:root
+{
+    --gray: rgb(223, 223, 223);
+    --grayTransparent: rgba(223, 223, 223, 0.521);
+    --highlightTransparent2: rgba(80, 174, 212, 0.2); /* 0.2 opacity */
+    --highlightTransparent3: rgba(80, 174, 212, 0.2); /* 0.3 opacity */
+    --highlightTransparent4: rgba(80, 174, 212, 0.4); /* 0.4 opacity */
+    --highlightTransparent6: rgba(80, 174, 212, 0.6); /* 0.6 opacity */
+}
+
+body
+{
+    color: white;
+    background-color: rgb(37, 39, 41);
+}
+
+.topGradient
+{
+    background-image: linear-gradient(rgb(37, 39, 41), #35383d);
+}
+
+.normalHeader
+{
+    background-color: rgb(37, 39, 41);
+}
+
+.gapFiller
+{
+    background-color: rgb(37, 39, 41);
+}
+
+.hamburgerHeader
+{
+    background-color: rgb(37, 39, 41);
+}
+
+header div p
+{
+    color: var(--gray);
+}
+
+header div p:hover
+{
+    color: white;
+}
+
+.headerTextUnderline
+{
+    color: white;
+}
+
+#selectedLanguageText
+{
+    color: var(--gray);
+}
+
+.userProfileButton
+{
+    color: white;
+}
+
+.footerColumn
+{
+    color: var(--gray);
+}
+
+.footerColumn b
+{
+    color: white;
+}
+
+.footerBottom, footer strong
+{
+    color: var(--gray);
+}
+
+.mainPageContentText
+{
+    color: var(--gray);
+}
+
+.mainPageContentTitle
+{
+    color: white;
+}
+
+.mainImage
+{
+    border: 3px solid var(--highlight);
+    box-shadow: 0px 0px 20px 10px var(--highlightTransparent4);
+}
+
+.footerMain
+{
+    border-bottom: 1px solid var(--grayTransparent);
+}
+
+.animal
+{
+    border: 2px solid var(--highlight);
+    box-shadow: 0px 0px 20px 10px var(--highlightTransparent2);
+}
+
+.animalBottom
+{
+    background-image: linear-gradient(rgb(231, 231, 231), rgb(209, 209, 209));
+}
+
+.adoptionBottom
+{
+    background-image: linear-gradient(rgb(231, 231, 231), rgb(209, 209, 209));
+    color: black;
+}
+
+.adoptionBottom .animalNameBold
+{
+    color: black;
+}
+
+.animalBottom .animalNameBold
+{
+    color: black;
+}
+
+.mainSquareTitle
+{
+    color: black;
+}
+
+.mainSquare
+{
+    box-shadow: 0px 0px 20px 10px var(--highlightTransparent6);
+}
+
+.languageSelectorArrowIcon svg path
+{
+    fill: white;
+}
+
+.filterContent
+{
+    color: black;
+}
+
+#hamburgerIcon span
+{
+    background-color: var(--gray) !important;
+}
+
+.selectTitle
+{
+    background-color: var(--gray);
+}
+
+.selectContent
+{
+    background-color: var(--gray);
+}
+
+.checkboxAnimalText
+{
+    color: white;
+}
+
+.sliderDiv .checkboxAnimal
+{
+    border: 2px solid white;
+}
+
+.animalNameBold
+{
+    color: white;
+}
+
+.animalInfosSecondContainer .animalName .animalAge
+{
+    color: var(--gray);
+}
+
+.animalContainerIMG
+{
+    border: 2px solid var(--highlight);
+    box-shadow: 0px 0px 20px 10px var(--highlightTransparent2);
+}
+
+.vaccineWindow, .habitatWindow
+{
+    color: black;
+}
+
+.dropdownContent
+{
+    background-color: var(--gray);
+}
+
+.dropdownContent a
+{
+    color: black;
+}
+
+.informationText
+{
+    color: black;
+}
+
+.filterRight .selectTitle
+{
+    background-color: white;
+}
+
+.filterRight .selectContent
+{
+    background-color: white;
+}
+
+.inputDescription, .inputWeight, .inputBirthday, .inputAnimalName
+{
+    background-color: var(--gray);
+}
+
+.topButton
+{
+    box-shadow: 0px 0px 20px 5px var(--highlightTransparent6);
+}
+
+.userProfileWindow, .vaccineWindow, .habitatWindow, .informationWindow, .modifyShelterWindow, .deleteWindow
+{
+    border: 2px solid var(--highlight);
+    box-shadow: 0px 0px 20px 7px var(--highlightTransparent6);
+}
+
+.genderUnknown
+{
+    outline-color: white !important;
+    content:url("../IMG/QuestionMarkWhite.png");
+}
+
+.darkGenderImage
+{
+    outline-color: white !important;
+    content:url("../IMG/QuestionMarkWhite.png");
+}
+
+.kg
+{
+    color: black;
+}
+
+.tableSpaceFiller
+{
+    background-color: rgb(40,43,45);
+}
+
+th:last-child
+{
+    border-right: 1px solid var(--highlight) !important;
+    border-top: 1px solid rgb(40,43,45) !important;
+}
+
+td
+{
+    color: black !important;
+}
+
+::-webkit-scrollbar-thumb 
+{
+    border-radius: 0px !important;
+}
+
+.deleteWindow
+{
+    color: black;
+}
+
+.noAnimals
+{
+    color: white;
+}
+
+.rightPaw
+{
+    content: url("../IMG/pawsRightDark.png");
+}
+
+.leftPaw
+{
+    content: url("../IMG/pawsLeftDark.png");
+}

@@ -1,0 +1,72 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RootNamespace>MenhelyMagus_Kezelo</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+	<ApplicationIcon>IMG\logo.ico</ApplicationIcon>
+	<PublishSingleFile>true</PublishSingleFile>
+    <SelfContained>true</SelfContained>
+    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="IMG\adminIcon.ico" />
+    <None Remove="IMG\adminIconGray.ico" />
+    <None Remove="IMG\birthdaycake.png" />
+    <None Remove="IMG\BreedIcon.png" />
+    <None Remove="IMG\employeeIcon.ico" />
+    <None Remove="IMG\employeeIconGray.ico" />
+    <None Remove="IMG\eyeClosed.png" />
+    <None Remove="IMG\eyeOpened.png" />
+    <None Remove="IMG\F.png" />
+    <None Remove="IMG\HabitatIcon.png" />
+    <None Remove="IMG\imageicon.png" />
+    <None Remove="IMG\InjectionIcon.png" />
+    <None Remove="IMG\location.png" />
+    <None Remove="IMG\logo.ico" />
+    <None Remove="IMG\M.png" />
+    <None Remove="IMG\minimizeIcon.ico" />
+    <None Remove="IMG\paws1.png" />
+    <None Remove="IMG\paws2.png" />
+    <None Remove="IMG\quitIcon.ico" />
+    <None Remove="IMG\rightArrow.ico" />
+    <None Remove="IMG\rightArrowGray.ico" />
+    <None Remove="IMG\shutdownIcon.ico" />
+    <None Remove="IMG\U.png" />
+    <None Remove="IMG\userIcon3.ico" />
+    <None Remove="IMG\WeightIcon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="IMG\adminIcon.ico" />
+    <Resource Include="IMG\adminIconGray.ico" />
+    <Resource Include="IMG\birthdaycake.png" />
+    <Resource Include="IMG\BreedIcon.png" />
+    <Resource Include="IMG\employeeIcon.ico" />
+    <Resource Include="IMG\employeeIconGray.ico" />
+    <Resource Include="IMG\eyeClosed.png" />
+    <Resource Include="IMG\eyeOpened.png" />
+    <Resource Include="IMG\F.png" />
+    <Resource Include="IMG\HabitatIcon.png" />
+    <Resource Include="IMG\imageicon.png" />
+    <Resource Include="IMG\InjectionIcon.png" />
+    <Resource Include="IMG\location.png" />
+    <Resource Include="IMG\logo.ico" />
+    <Resource Include="IMG\M.png" />
+    <Resource Include="IMG\minimizeIcon.ico" />
+    <Resource Include="IMG\paws1.png" />
+    <Resource Include="IMG\paws2.png" />
+    <Resource Include="IMG\quitIcon.ico" />
+    <Resource Include="IMG\rightArrow.ico" />
+    <Resource Include="IMG\rightArrowGray.ico" />
+    <Resource Include="IMG\shutdownIcon.ico" />
+    <Resource Include="IMG\U.png" />
+    <Resource Include="IMG\userIcon3.ico" />
+    <Resource Include="IMG\WeightIcon.png" />
+  </ItemGroup>
+
+</Project>

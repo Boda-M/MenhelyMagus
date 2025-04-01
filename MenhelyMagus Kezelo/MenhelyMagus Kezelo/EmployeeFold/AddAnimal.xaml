@@ -1,0 +1,205 @@
+﻿<UserControl x:Class="MenhelyMagus_Kezelo.EmployeeFold.AddAnimal"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MenhelyMagus_Kezelo"
+             xmlns:controls="clr-namespace:MenhelyMagus_Kezelo.Controls"
+             xmlns:System="clr-namespace:System;assembly=mscorlib"
+             mc:Ignorable="d" d:DesignWidth="600" d:DesignHeight="1325" 
+             
+             >
+    <UserControl.Resources>
+        <Style TargetType="TextBox" BasedOn="{StaticResource GlobalTB}">
+            <Setter Property="Grid.ColumnSpan" Value="3"/>
+            <Setter Property="Grid.Column" Value="1"></Setter>
+            <Setter Property="FontSize" Value="20"/>
+
+        </Style>
+        <Style TargetType="Button" BasedOn="{StaticResource GlobalBTN}">
+            <Setter Property="Grid.ColumnSpan" Value="3"/>
+            <Setter Property="Grid.Column" Value="1"/>
+            <Setter Property="Height" Value="50"/>
+            <Setter Property="FontSize" Value="20"/>
+        </Style>
+        <Style TargetType="Label">
+            <Setter Property="Margin" Value="10,0,10,0"/>
+            <Setter Property="Padding" Value="5,0,5,0"/>
+            <Setter Property="FontSize" Value="10"/>
+            <Setter Property="Foreground" Value="{StaticResource PrimaryBrush}"/>
+        </Style>
+        <Style TargetType="CheckBox">
+            <Setter Property="Margin" Value="10,0,10,0"/>
+            <Setter Property="Padding" Value="5,10,5,0"/>
+            <Setter Property="FontSize" Value="10"/>
+            <Setter Property="LayoutTransform">
+                <Setter.Value>
+                    <ScaleTransform ScaleX="3" ScaleY="3"/>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Width" Value="15"/>
+        </Style>
+        <Style TargetType="ComboBox" BasedOn="{StaticResource GlobalCB}">
+
+        </Style>
+        <Style TargetType="ListBox" BasedOn="{StaticResource GlobalLB}">
+
+        </Style>
+        <Style TargetType="TextBlock">
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="FontSize" Value="15"/>
+        </Style>
+
+        <Style TargetType="Slider">
+            <Setter Property="Minimum" Value="0"/>
+            <Setter Property="Maximum" Value="10"/>
+            <Setter Property="Value" Value="5"/>
+            <Setter Property="IsSnapToTickEnabled" Value="true"/>
+            <Setter Property="TickPlacement" Value="BottomRight"/>
+        </Style>
+
+    </UserControl.Resources>
+    <ScrollViewer>
+        <StackPanel Height="1325">
+            <Grid Height="1325">
+                <Grid.RowDefinitions >
+                    <RowDefinition  />
+                    <RowDefinition Height="100" />
+                    <RowDefinition  />
+                    <RowDefinition  />
+                    <RowDefinition  />
+                    <RowDefinition Height="100" />
+                    <RowDefinition Height="100" />
+                    <RowDefinition  />
+                    <RowDefinition  />
+                    <RowDefinition  />
+                    <RowDefinition  />
+                    <RowDefinition  />
+                    <RowDefinition  />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition  />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.5*"></ColumnDefinition>
+                    <ColumnDefinition Width="2*"></ColumnDefinition>
+                    <ColumnDefinition Width="2*"></ColumnDefinition>
+                    <ColumnDefinition Width="2*"></ColumnDefinition>
+                    <ColumnDefinition Width="0.5*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <TextBox Grid.Row="0" Name="Name" Tag="Név" Grid.Column="1" Grid.ColumnSpan="3" Margin="10,10,10,10" />
+                <StackPanel  Grid.Row="1" Grid.Column="1">
+                    <Label Margin="0,0,0,0" FontSize="20" HorizontalAlignment="Left" Content="Szül. dátum:"/>
+                    <DatePicker Name="BirthDate" DisplayDateEnd="{Binding Mode=OneWay, Source={x:Static System:DateTime.Today}}" Focusable = "False" Margin="0,10,0,0"/>
+                </StackPanel>
+                <StackPanel Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="1">
+                    <Label FontSize="20" Margin="0,0,0,0" HorizontalAlignment="Left" Content="Menh. dátum:"/>
+                    <DatePicker x:Name="EntryDate" DisplayDateEnd="{Binding Mode=OneWay, Source={x:Static System:DateTime.Today}}" Focusable = "False" Margin="0,10,0,0"/>
+                </StackPanel>
+                <StackPanel Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="1">
+                    <Label FontSize="20" Margin="0,0,5,0" HorizontalAlignment="Center">Faj:</Label>
+                    <ComboBox Name="Species" Grid.ColumnSpan="1" SelectionChanged="Species_SelectionChanged" Margin="10,10,12,0" >
+                        <ComboBox.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Name}" />
+                            </DataTemplate>
+                        </ComboBox.ItemTemplate>
+                    </ComboBox>
+                </StackPanel>
+
+                <Grid Grid.Row="2" Grid.ColumnSpan="3" Grid.Column="1" >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <controls:MultiSelectComboBox Grid.Column="0" x:Name="Breeds" ControlTag="Fajta" Margin="0,0,250,0" Padding="5,0,5,0" Grid.ColumnSpan="2"/>
+                    <controls:MultiSelectComboBox Grid.Column="1" x:Name="Vaccines" ControlTag="Oltás" Padding="4,0,5,0" Margin="5,0,-5,0"/>
+                </Grid>
+                <controls:MultiSelectComboBox Grid.Row="3" Grid.Column="2" x:Name="Habitats" ControlTag="Élőhelyek" Margin="150,0,25,78" Padding="5,0,5,0" Grid.ColumnSpan="3" Grid.RowSpan="2" Width="180"/>
+                <Image Name="Image" Grid.Row="3" Grid.Column="1" Grid.RowSpan="3" Grid.ColumnSpan="2" Source="/IMG/imageicon.png" Margin="10,10,23,10" MouseDown="ChangeImage_Click" HorizontalAlignment="Center" VerticalAlignment="Center" Width="240" Stretch="UniformToFill"/>
+                <StackPanel Grid.Row="4" Grid.Column="3" Grid.ColumnSpan="1" Orientation="Horizontal" Grid.RowSpan="1">
+                    <TextBox Name="Weight" Tag="Tömeg" Width="100" PreviewTextInput="OnlyNumeric" ></TextBox>
+                    <TextBlock VerticalAlignment="Center" FontSize="20" Foreground="{StaticResource PrimaryBrush}" >kg</TextBlock>
+                </StackPanel>
+                <StackPanel Grid.Row="5" Grid.Column="3" Grid.ColumnSpan="1">
+                    <Label FontSize="20" HorizontalAlignment="Center">Nem:</Label>
+                    <ComboBox  x:Name="Gender" SelectedValuePath="Content" Width="150" Margin="5,0,10,0" >
+                        <ComboBoxItem Content="Hím"/>
+                        <ComboBoxItem Content="Nőstény"/>
+                        <ComboBoxItem Content="Ismeretlen"/>
+                    </ComboBox>
+                </StackPanel>
+
+                <StackPanel Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="1" Name="Egészséges"   >
+                    <TextBlock Text="Egészséges:" HorizontalAlignment="Center" Foreground="{StaticResource PrimaryBrush}" FontSize="20" Margin="0,20,0,5"/>
+                    <CheckBox Template="{DynamicResource CheckBoxTemplateBetter}" Name="CB_Healthy" IsChecked="False" Width="14" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </StackPanel>
+                <StackPanel Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="3" Name="Ivartalanított"   >
+                    <TextBlock Text="Ivartalanított:" Foreground="{StaticResource PrimaryBrush}" FontSize="20" Margin="0,20,0,5" />
+                    <CheckBox Template="{DynamicResource CheckBoxTemplateBetter}" Name="CB_Neutered" IsChecked="False" Width="14" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </StackPanel>
+                <StackPanel Grid.Row="6" Grid.Column="3" Grid.ColumnSpan="1" Name="Szobatiszta"  >
+                    <TextBlock Text="Szobatiszta:" HorizontalAlignment="Center" Foreground="{StaticResource PrimaryBrush}" FontSize="20" Margin="0,20,0,5"/>
+                    <CheckBox Template="{DynamicResource CheckBoxTemplateBetter}" Name="CB_Housebroken" IsChecked="False" Width="14" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </StackPanel>
+
+                <StackPanel Grid.Row="7" Grid.Column="1" Grid.ColumnSpan="3" Grid.RowSpan="4">
+                    <TextBlock Foreground="{StaticResource PrimaryBrush}" FontSize="20" Margin="0,15,0,10">Leírás:</TextBlock>
+                    <TextBox Name="Description" FontSize="16" Height="90" AcceptsReturn="True"  TextWrapping="Wrap" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto">
+                        <TextBox.Style>
+                            <Style>
+
+                            </Style>
+                        </TextBox.Style>
+                    </TextBox>
+                </StackPanel>
+                <StackPanel Grid.Row="9" Grid.Column="1" Grid.ColumnSpan="3" >
+                    <WrapPanel Margin="0,10">
+                        <TextBlock Text="Cukiság: " FontWeight="DemiBold" Foreground="{StaticResource PrimaryBrush}" />
+                        <TextBlock Text="{Binding Path=Value, ElementName=Cuteness}" Foreground="{StaticResource PrimaryBrush}" />
+                    </WrapPanel>
+                    <Slider Template="{DynamicResource SliderTemplateBetter}" Name="Cuteness" ></Slider>
+                </StackPanel>
+                <StackPanel Grid.Row="10" Grid.Column="1" Grid.ColumnSpan="3">
+                    <WrapPanel Margin="0,10">
+                        <TextBlock Text="Gyerekbarát: " FontWeight="DemiBold" Foreground="{StaticResource PrimaryBrush}" />
+                        <TextBlock Text="{Binding Path=Value, ElementName=ChildFriendlyness}" Foreground="{StaticResource PrimaryBrush}" />
+                    </WrapPanel>
+                    <Slider Template="{DynamicResource SliderTemplateBetter}"  Name="ChildFriendlyness" ></Slider>
+                </StackPanel>
+                <StackPanel Grid.Row="11" Grid.Column="1" Grid.ColumnSpan="3" >
+                    <WrapPanel Margin="0,10">
+                        <TextBlock Text="Társaslény: " FontWeight="DemiBold" Foreground="{StaticResource PrimaryBrush}" />
+                        <TextBlock Text="{Binding Path=Value, ElementName=Sociability}" Foreground="{StaticResource PrimaryBrush}" />
+                    </WrapPanel>
+                    <Slider Template="{DynamicResource SliderTemplateBetter}"  Name="Sociability" ></Slider>
+                </StackPanel>
+                <StackPanel Grid.Row="12" Grid.Column="1" Grid.ColumnSpan="3">
+                    <WrapPanel Margin="0,10">
+                        <TextBlock Text="Mozgásigény: " FontWeight="DemiBold" Foreground="{StaticResource PrimaryBrush}" />
+                        <TextBlock Text="{Binding Path=Value, ElementName=ExerciseNeed}" Foreground="{StaticResource PrimaryBrush}" />
+                    </WrapPanel>
+                    <Slider Template="{DynamicResource SliderTemplateBetter}"  Name="ExerciseNeed" ></Slider>
+                </StackPanel>
+                <StackPanel Grid.Row="13" Grid.Column="1" Grid.ColumnSpan="3" Grid.RowSpan="2">
+                    <WrapPanel Margin="0,10">
+                        <TextBlock Text="Szőrhossz: " FontWeight="DemiBold" Foreground="{StaticResource PrimaryBrush}" />
+                        <TextBlock Text="{Binding Path=Value, ElementName=FurLength}" Foreground="{StaticResource PrimaryBrush}" />
+                    </WrapPanel>
+                    <Slider Template="{DynamicResource SliderTemplateBetter}"  Name="FurLength" ></Slider>
+                </StackPanel>
+                <StackPanel Grid.Row="14" Grid.Column="1" Grid.ColumnSpan="3">
+                    <WrapPanel Margin="0,10">
+                        <TextBlock Text="Tanulékonyság: " FontWeight="DemiBold" Foreground="{StaticResource PrimaryBrush}" />
+                        <TextBlock Text="{Binding Path=Value, ElementName=Docility}" Foreground="{StaticResource PrimaryBrush}" />
+                    </WrapPanel>
+                    <Slider Template="{DynamicResource SliderTemplateBetter}"  Name="Docility" ></Slider>
+                </StackPanel>
+
+                <Button Grid.Row="15" Content="Állat hozzáadása" Click="Add_Click"  />
+
+            </Grid>
+        </StackPanel>
+    </ScrollViewer>
+</UserControl>

@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="MenhelyMagus_Kezelo.Controls.PhoneNumber"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MenhelyMagus_Kezelo"
+             mc:Ignorable="d" 
+               d:DesignHeight="50" d:DesignWidth="200">
+    <UserControl.Resources>
+        <Style TargetType="TextBox" BasedOn="{StaticResource GlobalTB}">
+            <Setter Property="Grid.ColumnSpan" Value="3"/>
+            <Setter Property="Grid.Column" Value="1"></Setter>
+            <Setter Property="Height" Value="50"/>
+            <Setter Property="FontSize" Value="20"/>
+
+            <Setter Property="Margin" Value="10,0,10,0"/>
+        </Style>
+    </UserControl.Resources>
+
+    <Grid>
+        <TextBox Name="Number" PreviewTextInput="Validate" TextChanged="OnTextChanged" Tag="Telefonszám" MaxLength="15"></TextBox>
+    </Grid>
+</UserControl>

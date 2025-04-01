@@ -1,0 +1,657 @@
+.filterAnimalsPerPageDropdown select 
+{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size: 16px;
+    background-color: #fff;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 6"><path fill="gray" d="M0 0l5 6 5-6z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 8px 5px;
+    cursor: pointer;
+    width: 65px;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.filterAnimalsPerPageDropdown 
+{
+    font-size: 20px;
+    float: left;
+}
+
+.filterRow 
+{
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.filterButtonRow
+{
+    position: absolute;
+    right: 12.5%;
+    top: 240px;
+    width: 75%;
+    height: 50px;
+    z-index: 4 !important;
+    pointer-events: none;
+}
+
+.filterSearchByName 
+{
+    float: right;
+}
+
+.filterSearchByName input 
+{
+    height: 25px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    padding: 5px 10px;
+    font-size: 16px;
+    width: 170px;
+    margin-top: 0px;
+}
+
+.filterDiv 
+{
+    background-color: var(--highlightdarker);
+    overflow: hidden;
+    border-radius: 8px;
+    position: relative;
+    user-select: none;
+    box-sizing: border-box;
+    display: inline-block;
+    margin-top: -15px;
+}
+
+#filter
+{
+    width: 28%;
+}
+
+#preferences
+{
+    width: 38%;
+}
+
+.filterHeader 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-image: linear-gradient(var(--highlight), var(--highlightdarker));
+    color: white;
+    font-weight: 500;
+    font-size: 28px;
+    height: 10px;
+    line-height: 10px;
+    padding: 20px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    transition: background-color 0.3s;
+
+    padding-right: 60px;
+
+}
+
+.filterHeader:hover 
+{
+    background-color: #006666;
+}
+
+.filterToggleIcon 
+{
+    width: 24px;
+    height: 24px;
+    fill: white;
+    transition: transform 0.3s ease;
+}
+
+.filterContent 
+{
+    border: 3px solid var(--highlightdarker);
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 18px;
+    background: rgb(244, 248, 252);
+    box-sizing: border-box;
+    height: 0;
+    opacity: 0;
+    transition: height 0.5s ease, opacity 0.5s ease;
+    overflow: hidden;
+}
+
+.filterContent .filter:last-of-type
+{
+    margin-bottom: 15px;
+}
+
+.filterNameOverflow
+{
+    overflow: hidden !important;
+}
+
+.filterContent > .filter
+{
+    margin-top: 15px;
+}
+
+.filterDiv.expanded .filterContent 
+{
+    height: 450px;
+    opacity: 1;
+}
+
+.filterDiv.expanded .filterToggleIcon 
+{
+    transform: rotate(180deg);
+}
+
+.filterHeader svg 
+{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 20px;
+    top: 13px;
+}
+
+.filter 
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filterRight 
+{
+    display: flex;
+    gap: 5px;
+}
+
+.filterRight img 
+{
+    width: 25px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.filterName 
+{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.selectedGender 
+{
+    outline: 2px solid rgb(124,195,247);
+    outline-offset: 3px;
+}
+
+.filterGenderMale
+{
+    outline-color: rgb(124,195,247) !important;
+}
+
+.filterGenderFemale
+{
+    outline-color: rgb(242,118,158) !important;
+}
+
+.filterGenderBoth
+{
+    outline-color: black !important;
+}
+
+.selectedNeuter 
+{
+    outline: 2px solid rgb(124,195,247);
+    outline-offset: 3px;
+}
+
+.filterNeuterYes
+{
+    outline-color: rgb(0,224,26) !important;
+}
+
+.filterNeuterNo
+{
+    outline-color: rgb(255,0,0) !important;
+}
+
+.filterNeuterBoth
+{
+    outline-color: black !important;
+}
+
+.selectedHouseBroken
+{
+    outline: 2px solid rgb(124,195,247);
+    outline-offset: 3px;
+}
+
+.filterHouseBrokenYes
+{
+    outline-color: rgb(0,224,26) !important;
+}
+
+.filterHouseBrokenNo
+{
+    outline-color: rgb(255,0,0) !important;
+}
+
+.filterHouseBrokenBoth
+{
+    outline-color: black !important;
+}
+
+* input[type="checkbox"] 
+{
+    display: none;
+    visibility: hidden;
+}
+
+* label 
+{
+    display: inline-block;
+}
+
+* .checkboxAnimal
+{
+    position: absolute;
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    border: 2px solid gray;
+    border-radius: 3px;
+    vertical-align: middle;
+    transition: background-color 0.1s ease;
+    cursor: pointer;
+    margin-top: -8px;
+    margin-left: -67px;
+}
+
+*.checkboxAnimal:after 
+{
+    content: '';
+    position: absolute;
+    top: 1px;
+    left: 5px;
+    width: 5px;
+    height: 11px;
+    opacity: 0;
+    transform: rotate(45deg) scale(0);
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    transition: all 0.3s ease;
+    transition-delay: 0.15s;
+}
+
+* input[type="checkbox"]:checked ~ .checkboxAnimal
+{
+    border-color: transparent;
+    background-image: linear-gradient(var(--highlight), var(--highlightdarker));
+}
+
+* input[type="checkbox"]:checked ~ .checkboxAnimal:after 
+{
+    opacity: 1;
+    transform: rotate(45deg) scale(1);
+}
+
+.checkboxAnimalText
+{
+    display: inline-block;
+    color: black;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.animate input[type="checkbox"]:checked ~ .checkboxAnimal
+{
+    animation: CheckboxAnimation 0.6s ease;
+}
+
+.optionDiv .checkboxAnimal
+{
+    left: 75px;
+    top: 13px;
+}
+
+.optionDiv .checkboxAnimalText
+{
+    font-size: 16px !important;
+}
+
+.selectTitle
+{
+    text-align: left;
+}
+
+#speciesSelect
+{
+    z-index: 6 !important;
+}
+
+#breedSelect
+{
+    z-index: 5 !important;
+}
+
+#locationSelect
+{
+    z-index: 4 !important;
+}
+
+#habitatSelect
+{
+    z-index: 3 !important;
+}
+
+#locationSelect .selectContent
+{
+    width: 300px !important;
+}
+
+#locationSelect .selectContent .optionDiv .checkboxAnimalText .optionText
+{
+    font-size: 14px !important;
+}
+
+.overflow
+{
+    overflow: visible;
+}
+
+.selectTitle
+{
+    width: 120px !important;
+    text-align: center;
+    padding-left: 0;
+}
+
+.sliderContainerDiv
+{
+    width: 100px;
+    position: absolute;
+    right: 120px;
+}
+
+.sliderContainerDiv2
+{
+    right: 0px;
+}
+
+html input[type="range"]
+{
+    left: unset;
+    width: 110px;
+    position: relative;
+}
+
+.rangeWeight
+{
+    background-image: linear-gradient(90deg, rgb(0, 155, 194), rgb(0, 100, 131)) !important;
+}
+
+.lastRange
+{
+    position: absolute;
+    right: 0px; 
+    width: 100px;
+}
+
+.sliderTextValue
+{
+    font-size:24px;
+    font-weight: 600;
+    width: 100px;
+    display: inline-block;
+    text-align: center;
+}
+
+.sliderTextWeight
+{
+    font-size:24px;
+    font-weight: 600;
+    width: 120px;
+    display: inline-block;
+    text-align: center;
+    margin-right: -5px;
+}
+
+.sliderTexts
+{
+    text-align: right;
+    margin-top: 15px;
+}
+
+.filterButton 
+{
+    float: right;    
+    background-color: var(--highlight);
+    border-radius: 15px;
+    width: 200px;
+    height: 42px;
+    line-height: 40px;
+    text-align: center;
+    font-weight: 500;
+    transition: opacity 1s ease;
+    opacity: 0;
+    font-size: 18px;
+    visibility: hidden;
+    pointer-events: auto;
+}
+
+.filterButtonOpacity 
+{
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.preferenceButton 
+{
+    float: left;    
+    background-color: var(--highlight);
+    border-radius: 15px;
+    width: 200px;
+    height: 42px;
+    line-height: 40px;
+    text-align: center;
+    font-weight: 500;
+    transition: opacity 1s ease;
+    opacity: 0;
+    font-size: 15px;
+    visibility: hidden;
+    pointer-events: auto;
+}
+
+.smallerFont
+{
+    font-size: 18px !important;
+}
+
+.optionDiv .checkboxAnimalText
+{
+    margin: unset !important;
+    margin-left: 30px !important;
+}
+
+.optionText
+{
+    margin-left: 0;
+}
+
+@media (max-width: 1600px)
+{
+    #filter
+    {
+        width: 36%;
+        margin-bottom: 20px;
+    }
+    #preferences
+    {
+        width: 62%;
+        margin-bottom: 20px;
+    }
+    .filterButtonRow
+    {
+        position: unset;
+        margin-top: -120px;
+        width: 42vw;
+        margin-left: 29vw;
+    }
+    .preferenceButton
+    {
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 1250px)
+{
+    .filterRow
+    {
+        width: 95%;
+    }
+    .filterRow
+    {
+        margin-bottom: 40px;
+    }
+    .filterButtonRow
+    {
+        position: unset;
+        float: right;
+        margin-top: -80px;
+        margin-right: 240px;
+    }
+    #filter
+    {
+        width: 44%;
+    }
+    #preferences
+    {
+        width: 54%;
+    }
+    .preferenceButton
+    {
+        margin: 0;
+    }
+    .filterButtonRow
+    {
+        width: 94.5vw;
+        margin-left: 0;
+        margin-right: 2vw;
+        margin-top: -30px;
+    }
+}
+
+@media (max-width: 850px)
+{
+    .sliderTexts
+    {
+        text-align: center;
+    }
+    #filter
+    {
+        width: 400px;
+        margin-bottom: 30px;
+    }
+    #preferences
+    {
+        width: 400px;
+    }
+    #preferences
+    {
+        width: 400px;
+    }
+    .sliderTextWeight
+    {
+        width: 85px;
+        margin-right: -100px;
+    }
+    .filterRow
+    {
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .filterButtonRow
+    {
+        width: 98.5vw;
+        position: unset;
+        margin-top: -30px;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .filterButton
+    {
+        float: unset !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    .preferenceButton
+    {
+        float: unset !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        margin-top: 20px;
+    }
+    .animalsDiv
+    {
+        margin-top: 130px !important;
+    }
+    .filterAnimalsPerPageDropdown
+    {
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .filterSearchByName
+    {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .sliderDiv p
+    {
+        font-size: 18px;
+    }
+    html input[type="range"]
+    {
+        width: 90px;
+    }
+    .sliderContainerDiv:not(.sliderContainerDiv2):not(.lastRange)
+    {
+        right: 100px;
+    }
+    .lastRange
+    {
+        position: absolute;
+        right: 2px !important;
+    }
+}
+
+@media (max-width: 480px)
+{
+    .sliders
+    {
+        max-width: unset !important;
+    }
+}

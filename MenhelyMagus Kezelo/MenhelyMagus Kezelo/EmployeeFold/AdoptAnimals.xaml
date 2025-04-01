@@ -1,0 +1,95 @@
+﻿<UserControl x:Class="MenhelyMagus_Kezelo.EmployeeFold.AdoptAnimals"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MenhelyMagus_Kezelo.EmployeeFold"
+             xmlns:controls="clr-namespace:MenhelyMagus_Kezelo.Controls"
+             xmlns:converters="clr-namespace:MenhelyMagus_Kezelo.Converters"
+             mc:Ignorable="d" 
+             d:DesignHeight="400" d:DesignWidth="600">
+    <UserControl.Resources>
+        <Style TargetType="TextBox" BasedOn="{StaticResource GlobalTB}">
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="Padding" Value="5,0,0,0"/>
+        </Style>
+        <Style TargetType="Button" BasedOn="{StaticResource GlobalBTN}">
+            <Setter Property="FontSize" Value="13"/>
+            <Setter Property="Height" Value="35"/>
+            <Setter Property="Margin" Value="5,0,5,0"/>
+            <Setter Property="Padding" Value="5,0,5,0"/>
+        </Style>
+        <converters:ImagePathConverter x:Key="ImagePathConverter"/>
+
+    </UserControl.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal">
+            <TextBox Width="200" Margin="10" Name="SearchBar" Tag="Keresés név alapján..." TextChanged="Search_Click" FontSize="16" Padding="8,3,0,0"></TextBox>
+            <Button Click="Reset_Click"  Width="100" FontSize="15" Margin="265,0,5,0">Visszaállítás</Button>
+        </StackPanel>
+        <DataGrid ColumnHeaderStyle="{DynamicResource DataGridColumnHeaderStyleCentered}" CellStyle="{DynamicResource DataGridCellStyleCentered}" Name="Adoptions" ItemsSource="{Binding adoptions}" AutoGenerateColumns="False" Grid.Row="1" Background="#FF23262B" CanUserResizeColumns="False" CanUserResizeRows="False" Height="340" VerticalAlignment="Bottom" >
+            <DataGrid.Resources>
+            </DataGrid.Resources>
+            <DataGrid.Columns>
+                <DataGridTextColumn Width="2.5*" Binding="{Binding AnimalName}" Header="Állatnév"></DataGridTextColumn>
+                <DataGridTextColumn Width="3.5*" Binding="{Binding UserName}" Header="Örökbefogdó név"></DataGridTextColumn>
+                <DataGridTextColumn Width="5*" Binding="{Binding UserEmail}" Header="Örökbefogdó email"></DataGridTextColumn>
+                <DataGridTextColumn Width="3.5*" Binding="{Binding AnimalBirthDate,StringFormat=\{0:yyyy-MM-dd\}}" Header="Születési Dátum"></DataGridTextColumn>
+
+            </DataGrid.Columns>
+            <DataGrid.RowDetailsTemplate>
+                <!--DETAILS__________________________________________ -->
+                <DataTemplate>
+                    <Grid Margin="10,5,0,10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                            <TextBlock Text="{Binding AnimalName}" FontSize="24" FontWeight="DemiBold"/>
+                            <TextBlock Text="{Binding AnimalAge, StringFormat=' {0}'}" FontSize="24" FontWeight="DemiBold"/>
+                            <Image Name="Nem" Source="{Binding AnimalGender, Converter={StaticResource ImagePathConverter}}" Width="20px" Margin="10,0,0,0"/>
+                        </StackPanel>
+                        <StackPanel Grid.Row="1" Grid.Column="0">
+                            <Image Name="Kép" Source="{Binding Image}" Margin="10,10,0,10" Width="100px" Height="100px" HorizontalAlignment="Left" Stretch="UniformToFill"/>
+                        </StackPanel>
+                        <StackPanel Grid.Row="0" Grid.Column="1" Grid.RowSpan="2" Margin="-40,40,0,15">
+                            <TextBlock FontWeight="Bold" Margin="0,5" FontSize="18">Örökbefogadó adatai:</TextBlock>
+                            <TextBlock Text="{Binding Path=UserName, StringFormat='Név: {0}'}"/>
+                            <TextBlock Text="{Binding Path=UserEmail, StringFormat='E-mail cím: {0}'}"/>
+                            <TextBlock Text="{Binding Path=UserTelephoneNumber, StringFormat='Telefonszám: {0}'}"/>
+                            <TextBlock>
+                                <TextBlock.Text>
+                                    <MultiBinding StringFormat="Lakcím: {0}, {1} {2}">
+                                        <Binding Path="UserCity" />
+                                        <Binding Path="UserStreet" />
+                                        <Binding Path="UserHouseNumber" />
+                                    </MultiBinding>
+                                </TextBlock.Text>
+                            </TextBlock>
+                        </StackPanel>
+                        <StackPanel Grid.Row="2" Grid.Column="0" Orientation="Horizontal" Grid.ColumnSpan="4">
+                            <Button Click="Decline_Click" Margin="60,0,0,0" FontSize="15" Width="210">Örökbefeogadás elutasítása</Button>
+                            <Button Click="Accept_Click" Margin="60,0,0,0" FontSize="15" Width="200">Örökbefogadás elfogadása</Button>
+                        </StackPanel>
+
+                    </Grid>
+                </DataTemplate>
+                
+            </DataGrid.RowDetailsTemplate>
+        </DataGrid>
+    </Grid>
+</UserControl>

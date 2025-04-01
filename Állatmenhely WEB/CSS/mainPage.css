@@ -1,0 +1,289 @@
+main
+{
+    width: 83%;
+    margin-left: 8.5%;
+    margin-bottom: 100px;
+}
+
+.mainPageContent
+{
+    margin-top: 150px;
+    margin-bottom: 250px;
+    width: 85%;
+    margin-left: 5%;
+    height: 900px;
+    text-align: center;
+}
+
+.mainPageContentTitle
+{
+    font-size: 60px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.mainPageContentText
+{
+    text-align: justify;
+    color: rgb(90,90,90);
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.mainLeftColumn 
+{
+    width: 37%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    display: inline-flex;
+}
+
+.mainPageContentTitle 
+{
+    margin-bottom: 10px;
+}
+
+.mainRightColumn
+{
+    width: 50%;
+    float: right;
+}
+
+.mainSquareTitle
+{
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.mainSquareDesc
+{
+    color: rgb(90,90,90);
+}
+
+.mainSquare
+{
+    width: 30%;
+    padding: 7%;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0px 20px 80px 0px rgba(192.99999999999997,199,212,.25098039215686274);
+    display: inline-block;
+    height: 320px;
+}
+
+.mainSquare2
+{
+    float: right;
+    margin-top: 80px;
+}
+
+.mainSquare3
+{
+    float: left;
+    margin-top: 40px;
+}
+
+.mainSquare4
+{
+    float: right;
+    margin-top: 40px;
+}
+
+.mainSquare img
+{
+    width: 70px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mainImage
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    height: 500px;
+    min-width: 50px;
+    background-image: url('../IMG/animalsV2.png');
+    background-size: cover;
+    border-radius: 25px;
+    background-position-x: center;
+    background-origin: border-box;
+    background-attachment: scroll;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.mainImageText
+{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.mainImageText h1
+{
+    font-weight: 800;
+    font-size: 80px;
+    text-shadow: 0px 0px 32px #000;
+    font-size: 5vw;
+}
+
+.mainImageText p
+{
+    font-weight: 400;
+    font-size: 20px;
+    text-shadow: 0px 0px 55px #000;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 1600px)
+{
+    .mainSquare
+    {
+        height: 360px;
+    }
+    .mainLeftColumn
+    {
+        width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        float: unset;
+        height: unset;
+        padding: 0;
+    }
+    .mainRightColumn
+    {
+        width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        float: unset;
+    }
+    .mainSquare2
+    {
+        margin-top: 0;
+    }
+    .mainSquare3
+    {
+        margin-top: 0;
+    }
+    .mainSquare4
+    {
+        margin-top: 0;
+    }
+    .mainPageContent
+    {
+        margin-top: 80px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .mainSquare1
+    {
+        margin-left: -70px;
+    }
+    .mainSquare
+    {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .mainPageContentTitle
+    {
+        margin-left: 20px;
+    }
+    .mainSquare3, .mainSquare4
+    {
+        margin-bottom: 80px;
+    }
+}
+
+@media (max-width: 1000px)
+{
+    .mainImage
+    {
+        height: 250px;
+    }
+    .mainImageText h1
+    {
+        font-weight: 800;
+        font-size: 80px;
+        text-shadow: 0px 0px 32px #000;
+        font-size: 9vw;
+    }
+}
+
+@media (max-width: 800px)
+{
+    main
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 600px)
+{
+    .mainLeftColumn
+    {
+        width: 340px;
+    }
+    .mainPageContentTitle
+    {
+        font-size: 46px;
+        margin-left: 0;
+    }
+    .mainRightColumn
+    {
+        width: 340px;
+    }
+    .mainSquare
+    {
+        width: 300px;
+        padding: 20px;
+        height: 300px;
+    }
+    .mainSquare1, .mainSquare3
+    {
+        margin-left: 0px;
+        margin-bottom: 30px;
+    }
+    .mainSquare2, .mainSquare4
+    {
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 400px)
+{
+    .mainPageContent
+    {
+        margin-left: unset;
+        margin-right: unset;
+        width: 100%;
+    }
+}
+
+.hamburgerHeader
+{
+    position: fixed !important;
+}
+
+.mainImage
+{
+    margin-top: 170px;
+}

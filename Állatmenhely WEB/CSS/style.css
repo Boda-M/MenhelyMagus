@@ -1,0 +1,161 @@
+:root
+{
+    --highlight: #50aed4;
+    --highlightdarker: #4b9ebe;
+}
+
+body, html
+{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: visible;
+    scrollbar-gutter: stable; 
+    height: fit-content;
+    z-index: 2;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body
+{
+    visibility: hidden;
+}
+
+a
+{
+    text-decoration: none;
+    color: inherit;
+}
+
+::-webkit-scrollbar 
+{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track 
+{
+    background: #f7f7f7; 
+}
+
+::-webkit-scrollbar-thumb 
+{
+    background: var(--highlight); 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover 
+{
+    background: var(--highlightdarker); 
+}
+
+.topGradientOuter
+{
+    position: fixed;
+    top: 120px;
+    z-index: -1 !important;
+    width: 100%;
+    height: 1000px;
+}
+
+.topGradient
+{
+    position: initial;
+    z-index: -1 !important;
+    width: 100%;
+    height: 1000px;
+    background-image: url("../IMG/gradient.png");
+    transition: background-image 1s ease;
+}
+
+.topButton
+{
+    background-color: var(--highlight);
+    border-radius: 10px;
+    padding: 15px;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+    display: none;
+    opacity: 0;
+    z-index: 7;
+    transition: opacity 0.4s ease;
+}
+
+.topButton:hover
+{
+    background-color: var(--highlightdarker);
+}
+
+body h1
+{
+    text-align: center !important;
+}
+
+@keyframes CheckboxAnimation
+    {
+    from 
+    {
+        transform: scale(1, 1);
+    }
+    30% 
+    {
+        transform: scale(1.25, 0.75);
+    }
+    40% 
+    {
+        transform: scale(0.75, 1.25);
+    }
+    50% 
+    {
+        transform: scale(1.15, 0.85);
+    }
+    65% 
+    {
+        transform: scale(0.95, 1.05);
+    }
+    75% 
+    {
+        transform: scale(1.05, 0.95);
+    }
+    to 
+    {
+        transform: scale(1, 1);
+    }
+}
+
+.fancyButton 
+{
+    background-image: linear-gradient(var(--highlight), var(--highlightdarker));
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    flex-shrink: 0;
+    font-family: "Inter UI", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: 500;
+    height: 4rem;
+    padding: 0 1.6rem;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+    transition: box-shadow 0.5s, background-image 0.5s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.fancyButton:hover 
+{
+    box-shadow: var(--highlightdarker) 0 1px 20px;
+}
+
+* img
+{
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}

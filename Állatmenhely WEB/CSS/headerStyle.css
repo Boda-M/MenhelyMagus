@@ -1,0 +1,487 @@
+header
+{
+    width: 93%;
+    padding-left: 4%;
+    height: 120px;
+    user-select: none;
+}
+
+.gapFiller
+{
+    position: fixed;
+    right:0;
+    top:0;
+    background-color: white;
+    z-index:3;
+    height: 120px;
+    width: 5%;
+    z-index: 1;
+}
+
+header div
+{
+    line-height: 120px;
+    height: 120px;
+}
+
+header div p 
+{
+    display: inline-block;
+    font-size: 16px;
+    color: rgb(90, 90, 90);
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 500;
+    position: relative;
+    overflow: hidden;
+}
+
+header div p:not(.headerTextUnderline)::before 
+{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 30%;
+    background-color: var(--highlight);
+    opacity: 0;
+    transform-origin: center;
+    transform: scaleX(0.5);
+    transition: transform 0.1s ease, opacity 0.1s ease-out;
+}
+
+header div p:hover::before 
+{
+    opacity: 1;
+    transform: scaleX(1);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+header div p:hover
+{
+    color: #000;
+}
+
+.normalHeader
+{
+    position: sticky;
+    z-index: 6500 !important;
+    top: 0;
+    background-color: white;
+    overflow:visible;
+}
+
+.headerHomeButton
+{
+    width: 64px;
+    height: 64px;
+    margin-top: 28px;
+    margin-right: 8%;
+    margin-left: calc((100vw - 1000px) / 4);
+    float: left;
+}
+
+.headerTextUnderline
+{
+    text-decoration-color: var(--highlight) !important;
+    text-decoration: underline;
+    text-underline-offset: 15px;
+    text-decoration-thickness: 2px;
+    color: black;
+}
+
+.languageSelector
+{
+    display: inline-block;
+    height: 120px !important;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(90, 90, 90);
+    margin-left: calc((44vw - 400px) / 2.5);
+    margin-right: 10px;
+}
+
+.languageSelector:hover
+{
+    color: var(--highlight);
+    fill: var(--highlight);
+}
+
+.languageSelector img
+{
+    vertical-align: middle;
+    line-height: 120px;
+    margin-right: 1px;
+    width: 18px;
+    height: 12px;
+}
+
+.languageSelectorArrowIcon
+{
+    margin-left: 6px;
+}
+
+.dropdown 
+{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdownContent 
+{
+    display: block;
+    position: absolute;
+    background-color: rgb(0,0,0);
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+    z-index: 3 !important;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    pointer-events: none;
+}
+
+.dropdownContent a 
+{
+    color: white;
+    line-height: 40px;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdownContent img
+{
+    margin-right: 7px;
+}
+
+.dropdownContent a:hover 
+{
+    color: var(--highlight);
+}
+
+.dropdown:hover .dropdownContent 
+{
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.loginButton
+{
+    background-color: var(--highlight);
+    border-radius: 15px;
+    width: 200px;
+    height: 42px;
+    line-height: 39px;
+    text-align: center;
+    font-weight: 500;
+    transition: ease 0.3s;
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.loginButtonDiv
+{
+    height: 120px !important;
+    display: inline-block;
+}
+
+.loginButton:hover
+{
+    background-color: var(--highlightdarker);
+}
+
+.loginLanguageDiv
+{
+    width: 48%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.sitePagesDiv
+{
+    width: 60%;
+}
+
+.hamburgerHeader
+{
+    height: 120px;
+    display: none;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 6500 !important;
+    overflow:visible;
+}
+
+.hamburgerHeader img
+{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+@media (max-width: 1000px)
+{
+    .normalHeader
+    {
+        display: none;
+    }
+    .hamburgerHeader
+    {
+        display: block;
+    }
+    #hamburgerIcon 
+    {
+        display: block !important;
+    }
+}
+
+#hamburgerPopup #darkModeDiv
+{
+    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-left: -5px;
+}
+
+#hamburgerPopup #darkModeDivHamburger
+{
+    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-left: -5px;
+}
+
+
+#hamburgerIcon 
+{
+    width: 60px;
+    height: 45px;
+    position: fixed;
+    top: 39px;
+    right: 5%;
+    transform: rotate(0deg);
+    transition: .5s ease-in-out;
+    cursor: pointer;
+    display: none;
+    z-index: 6501 !important;
+    transition: margin-right 0s;
+}
+  
+#hamburgerIcon span
+{
+    display: block;
+    position: absolute;
+    height: 6px;
+    width: 100%;
+    background-color: black;
+    border-radius: 5px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: 0.25s ease-in-out, background-color 0.15s ease-in-out;
+
+}
+
+#hamburgerIcon:hover span 
+{
+    background-color: var(--highlightdarker);
+}
+  
+#hamburgerIcon span:nth-child(1) 
+{
+    top: 0px;
+}
+
+#hamburgerIcon span:nth-child(2),#hamburgerIcon span:nth-child(3) 
+{
+    top: 18px;
+}
+
+#hamburgerIcon span:nth-child(4) 
+{
+    top: 36px;
+}
+
+#hamburgerIcon.open span:nth-child(1) 
+{
+    top: 18px;
+    width: 0%;
+    left: 50%;
+}
+
+.open
+{
+    margin-right: 1.25% !important;
+}
+
+#hamburgerIcon.open span:nth-child(2) 
+{
+    transform: rotate(45deg);
+}
+
+#hamburgerIcon.open span:nth-child(3) 
+{
+    transform: rotate(-45deg);
+}
+
+#hamburgerIcon.open span:nth-child(4) 
+{
+    top: 18px;
+    width: 0%;
+    left: 50%;
+}
+
+#hamburgerPopup
+{
+    display: none;
+    background-color: rgba(18,21,25,0.98);
+    z-index: 6500 !important;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top:0;
+    text-align: center;
+    margin: 0;
+}
+
+#hamburgerPopupFirst
+{
+    margin-top: 200px;
+}
+
+#hamburgerPopup h1
+{
+    font-size: 30px;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+#hamburgerPopup h1:hover
+{
+    color: var(--highlightdarker);
+}
+
+#hamburgerPopup .headerTextUnderline
+{
+    color: var(--highlight);
+    text-decoration: none;
+}
+
+#hamburgerPopup .loginButtonDiv
+{
+    margin-top: 20px;
+}
+#hamburgerPopup .loginButton
+{
+    margin-left: 0;
+}
+
+#hamburgerPopup img
+{
+    margin-top: 20px;
+    width: 40px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: 2px solid transparent;
+}
+
+#hamburgerPopup img:hover
+{
+    border: 2px solid var(--highlightdarker);
+}
+
+.userProfileButton
+{
+    width: 40px;
+    margin-bottom: -20px;
+    margin-left: 5px;
+}
+
+#logoutButton
+{
+    width: 165px;
+}
+
+.userProfileButton {
+    color: #000000;
+    transition: color 0.6s ease, filter 0.5s ease, scale 0.5s ease;
+}
+
+.userProfileButton:hover {
+    color: #499dbe !important;
+    filter: drop-shadow(0 0 8px var(--highlight));
+    scale: 1.04
+}
+
+#logoutButtonHamburger
+{
+    display: none;
+}
+
+
+#darkModeDiv, #darkModeDivHamburger
+{
+    display: inline-block;
+    font-size: 30%;
+    position: relative;
+    height: 30px;
+    width: 70px;
+    border-radius: 20px;
+    transition: all 500ms ease-in-out;
+    background: var(--highlightdarker);
+    margin-bottom: -10px;
+    margin-right: 0px;
+    margin-left: 20px;
+}
+.day
+{
+    background: #ffe600 !important;
+}
+.moon {
+    position: absolute;
+    display: block;
+    border-radius: 50%;
+    transition: all 400ms ease-in-out;
+    
+    top: 1em;
+    left: 1.5em;
+    transform: rotate(-75deg);
+    width: 20px;
+    height: 20px;
+    background: var(--highlightdarker);
+    box-shadow: 
+      1em 1.25em 0 0em #ffffff inset,
+      rgba(255, 255, 255, 0.1) 0em -7em 0 -4.5em,
+      rgba(255, 255, 255, 0.1) 3em 7em 0 -4.5em,
+      rgba(255, 255, 255, 0.1) 2em 13em 0 -4em,
+      rgba(255, 255, 255, 0.1) 6em 2em 0 -4.1em,
+      rgba(255, 255, 255, 0.1) 8em 8em 0 -4.5em,
+      rgba(255, 255, 255, 0.1) 6em 13em 0 -4.5em,
+      rgba(255, 255, 255, 0.1) -4em 7em 0 -4.5em,
+      rgba(255, 255, 255, 0.1) -1em 10em 0 -4.5em;
+}
+.sun 
+{
+    top: 0.7em;
+    left: 8.5em;
+    transform: rotate(0deg);
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border: 2px solid orange;
+    box-shadow: 0 0 20px orange;
+}
+
+#hamburgerHeaderUserIconDiv svg
+{
+    margin-top: 10px;
+    margin-bottom: -15px;
+    margin-left: -3px;
+    color: white;
+}

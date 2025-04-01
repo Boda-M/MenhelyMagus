@@ -1,0 +1,201 @@
+.selectContent
+{
+    display: none;
+    width: 220px;
+    background-color: white;
+    border-radius: 5px;
+    max-height: 200px;
+    overflow-y: scroll;
+    overflow-x: none;
+    position: absolute;
+    top: 55px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    z-index: 5000 !important;
+}
+
+.selectContent .optionDiv
+{
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding-left: 10px;
+    line-height: 30px;
+    height: 30px;
+    position: relative;
+    z-index: 5000 !important;
+}
+
+.selectContent .optionDiv:hover
+{
+    background-color: rgb(241, 241, 241);
+}
+
+.select
+{
+    box-sizing: border-box;
+    font-size: 16px;
+    position: relative;
+    z-index: 5000 !important;
+}
+
+.locationDiv .select
+{
+    z-index: 4999 !important;
+}
+
+.locationDiv .select .selectContent .optionDiv .checkboxAnimalText .optionText
+{
+    font-size: 14px !important;
+}
+
+.locationDiv .select .selectContent
+{
+    width: 300px;
+}
+
+.selectTitle
+{
+    background-color: white;
+    min-height: 45px;
+    line-height: 45px;
+    overflow: hidden;
+    border: 1px solid black;
+    width: 138px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding-left: 12px;
+    z-index: 4999 !important;
+    position: relative;
+}
+
+.placeholder
+{
+    color: #65727e;
+}
+
+.breedsDiv .select
+{
+    float: right;
+}
+
+.speciesDiv .select
+{
+    float: left;
+}
+
+.locationDiv .select
+{
+    float: left;
+}
+
+.habitatDiv .select
+{
+    float:left;
+    z-index: 4998 !important;
+}
+
+.vaccineDiv .select
+{
+    float: right;
+    z-index: 4998 !important;
+    margin-top: -10px;
+}
+
+.optionDiv input[type="checkbox"] 
+{
+    display: none;
+    visibility: hidden;
+}
+
+.optionDiv label 
+{
+    display: inline-block;
+}
+
+.optionDiv .checkboxAnimal
+{
+    position: absolute;
+    display: inline-block;
+    top: 5px;
+    width: 17px;
+    height: 17px;
+    border: 2px solid gray;
+    border-radius: 3px;
+    vertical-align: middle;
+    transition: background-color 0.1s ease;
+    cursor: pointer;
+}
+
+.optionDiv .checkboxAnimal:after 
+{
+    content: '';
+    position: absolute;
+    top: 1px;
+    left: 5px;
+    width: 5px;
+    height: 11px;
+    opacity: 0;
+    transform: rotate(45deg) scale(0);
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    transition: all 0s ease;
+    transition-delay: 0s;
+}
+
+.optionDiv input[type="checkbox"]:checked ~ .checkboxAnimal
+{
+    border-color: transparent;
+    background-image: linear-gradient(var(--highlight), var(--highlightdarker));
+}
+
+.optionDiv input[type="checkbox"]:checked ~ .checkboxAnimal:after 
+{
+    opacity: 1;
+    transform: rotate(45deg) scale(1);
+}
+
+.optionDiv .checkboxAnimalText
+{
+    display: inline-block !important;
+    color: black !important;
+    font-size: 16px !important;
+    margin: 0 !important;
+    font-weight: 400 !important;
+}
+
+.optionText
+{
+    margin-left: 30px;
+    margin-right: 30px !important;
+}
+
+.radio .checkboxAnimal
+{
+    border-radius: 10px !important;
+}
+
+.radio input[type="checkbox"]:checked ~ .checkboxAnimal:after
+{
+    opacity: 0 !important;
+}
+
+.radio input[type="checkbox"]:checked ~ .checkboxAnimal 
+{
+    border: 3px solid white;
+    box-shadow: 0 0 0 2px var(--highlight);
+}
+
+.radio input[type="checkbox"]:checked ~ .checkboxAnimal
+{
+    width: 14px !important;
+    height: 14px !important;
+}
+
+#habitatRegister
+{
+    width: 120px !important;
+}
+
+.registerSelect
+{
+    margin-right: 15px !important;
+}
